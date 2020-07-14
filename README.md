@@ -1,5 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Ueki Dev Starter
+
+Out of the box support for:
+* [Typescript](https://nextjs.org/learn/excel/typescript)
+* [Image Optimization](https://github.com/cyrilwanner/next-optimized-images)
+* [SEO Component](https://nextjs.org/docs/api-reference/next/head)
+* Functional Contact form with simple validations
+* [Tailwindcss](https://tailwindcss.com/) for rapid prototyping
+* MDX blog support `next.config.js`
+  * [Enhanced frontmatter support](https://github.com/hashicorp/next-mdx-enhanced)
+  * [Reading-Time](https://github.com/ngryman/reading-time#readme)
+  * Formatted dates
+
 ## Getting Started
 
 First, run the development server:
@@ -12,7 +25,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 ## Learn More
 
