@@ -14,7 +14,7 @@ export default function () {
   const [hidden, setHidden] = useState(true)
 
   return (
-    <nav className="mx-auto flex px-1 py-1 justify-between w-full">
+    <nav className="mx-auto flex px-2 py-1 justify-between w-full">
       <Link href="/">
         <h2 className="text-2xl cursor-pointer font-extrabold flex-grow lg:flex-1 hover:text-purple-800">
           <a className='text-purple-600'>Royal Carpet & Tile</a>
