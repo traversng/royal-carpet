@@ -23,7 +23,7 @@ export default function () {
       <div className='flex flex-col items-end'>
         <div className="md:hidden">
           <button onClick={() => setHidden(!hidden)}>
-            {hidden ? <Menu fill="text-purple-900" /> : <Close fill="black" />}
+            {hidden ? <Menu /> : <Close />}
           </button>
         </div>
         <div className="flex justify-center md:justify-start">

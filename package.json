@@ -37,6 +37,7 @@
     "reading-time": "^1.2.0",
     "rehype": "^11.0.0",
     "remark-code-titles": "^0.1.1",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.6",
+    "webp-loader": "^0.6.0"
   }
 }
