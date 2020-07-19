@@ -1,25 +1,38 @@
 @import '../node_modules/prismjs/themes/prism-tomorrow.css';
 
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway&display=swap');
+
 /* purgecss start ignore */
 @tailwind base;
 
 h1 {
   @apply text-2xl;
+  font-family: 'Lato', sans-serif
 }
 h2 {
   @apply text-xl;
+  font-family: 'Lato', sans-serif
 }
 h3 {
   @apply text-lg;
+  font-family: 'Lato', sans-serif
 }
 h4 {
   @apply text-base;
+  font-family: 'Lato', sans-serif
 }
 h5 {
   @apply text-sm;
+  font-family: 'Lato', sans-serif
 }
 h6 {
   @apply text-xs;
+  font-family: 'Lato', sans-serif
+}
+
+body: {
+  font-family: 'Raleway', sans-serif
 }
 
 /* purgecss end ignore */

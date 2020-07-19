@@ -1,4 +1,5 @@
 import 'lazysizes'
+import '@brainhubeu/react-carousel/lib/style.css'
 
 import '../styles/index.css'
 
@@ -7,7 +8,7 @@ import '../styles/index.css'
 export default function MyApp({ Component, pageProps }) {
 
   return (
-    <div className={`font-sans mx-auto px-6 md:px-8`}>
+    <div className={`mx-auto md:px-8`}>
       <Component {...pageProps} />
     </div>
   )

@@ -1,26 +1,49 @@
 import Link from 'next/link'
+import { useState } from 'react'
+
+import Menu from '../components/svgs/Menu'
+import Close from '../components/svgs/Close'
+
+const links = [
+  { text: 'About', url: '/about' },
+  { text: 'Results', url: '/results' },
+  { text: 'Contact', url: '/contact' },
+]
 
 export default function () {
+  const [hidden, setHidden] = useState(true)
+
   return (
-    <nav className="mx-auto flex py-2 justify-between mb-4 md:mb-8 w-full">
-      <div className="cursor-pointer md:text-center mx-auto">
-        <div className="text-center">
-          <Link href="/">
-            <h2 className="text-2xl font-mono font-bold flex-grow lg:flex-1 hover:text-blue-500">
-              <a>Next Blog Starter</a>
-            </h2>
-          </Link>
+    <nav className="mx-auto flex px-1 py-1 justify-between w-full">
+      <Link href="/">
+        <h2 className="text-2xl cursor-pointer font-extrabold flex-grow lg:flex-1 hover:text-purple-800">
+          <a className='text-purple-600'>Royal Carpet & Tile</a>
+        </h2>
+      </Link>
+      <div className='flex flex-col items-end'>
+        <div className="md:hidden">
+          <button onClick={() => setHidden(!hidden)}>
+            {hidden ? <Menu fill="text-purple-900" /> : <Close fill="black" />}
+          </button>
         </div>
-        <div className="text-center">
-          <Link href="/about">
-            <a className="cursor-pointer hover:text-blue-500 text-xl px-2">About</a>
-          </Link>
-          <Link href="/blog">
-            <a className="cursor-pointer hover:text-blue-500 text-xl px-2">Blog</a>
-          </Link>
-          <Link href="/contact">
-            <a className="cursor-pointer hover:text-blue-500 text-xl px-2">Contact</a>
-          </Link>
+        <div className="flex justify-center md:justify-start">
+          <ul
+            className={`md:flex justify-between w-full md:w-1/2 ${
+              hidden ? 'hidden' : ''
+            }`}
+          >
+            {links.map((link) => {
+              return (
+                <Link href={link.url}>
+                  <li className="mx-1">
+                    <a className="text-lg text-purple-600 hover:text-purple-800" href="#">
+                      {link.text}
+                    </a>
+                  </li>
+                </Link>
+              )
+            })}
+          </ul>
         </div>
       </div>
     </nav>

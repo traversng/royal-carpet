@@ -1,0 +1,29 @@
+import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel'
+
+import OptimizedImage from './OptimizedImage'
+
+export const OptimizedCarousel = ({ content }) => {
+  return (
+    <Carousel arrows dots infinite>
+      {content.map((info, i) => {
+        return (
+          <div className="rounded shadow-lg">
+            <OptimizedImage
+              fileName={info.fileName}
+              classes={info.classes}
+              altText={info.altText}
+            />
+            <div className="px-6 py-4 bg-gray-100">
+        <div className="font-bold text-xl mb-2 text-purple-600">{info.title}</div>
+              <p className="text-gray-700 text-base">
+                {info.description}
+              </p>
+            </div>
+          </div>
+        )
+      })}
+    </Carousel>
+  )
+}
+
+export default OptimizedCarousel

@@ -1,9 +1,32 @@
 import Link from 'next/link'
+import { TiPhoneOutline } from 'react-icons/ti'
+
 import Default from '../components/layouts/Default'
 import SEO from '../components/SEO'
 import config from '../utils/config'
-import { formatPath } from '../utils/formatPath'
-import { frontMatter as blogPosts } from './blog/**/*.mdx'
+import OptimizedImage from '../components/OptimizedImage'
+import OptimizedCarousel from '../components/OptimizedCarousel'
+
+const carouselImages = [
+  {
+    fileName: 'baby-floor.jpg',
+    altText: 'baby-floor',
+    title: 'Carpet cleaning',
+    description: 'Baby on clean carpet after a cleaning service',
+  },
+  {
+    fileName: 'baby-floor.jpg',
+    altText: 'baby-floor',
+    title: 'Tile cleaning',
+    description: 'Baby on clean carpet after a cleaning service',
+  },
+  {
+    fileName: 'baby-floor.jpg',
+    altText: 'baby-floor',
+    title: 'Upholstry cleaning',
+    description: 'Baby on clean carpet after a cleaning service',
+  },
+]
 
 export default function Home() {
   return (
@@ -14,53 +37,85 @@ export default function Home() {
         image={config.images.default}
         url={config.liveUrl}
       />
-      <div className="md:flex">
-        <div>
-          <h1 className="text-2xl font-bold">Starter index</h1>
-          <div className="border-l-4 border-black pl-2">
-            <ul>
-              <li>Typescript</li>
-              <li>Image optimization</li>
-              <li>SEO component</li>
-              <li>Functional Contact form with simple validations</li>
-              <li>Tailwindcss for rapid prototyping</li>
-              <li>
-                MDX blog support with:{' '}
-                <ul>
-                  <li>Enhanced Frontmatter</li>
-                  <li>Reading Times</li>
-                  <li>Formatted Dates</li>
-                </ul>
-              </li>
-            </ul>
+      <div className="w-full">
+        <OptimizedImage
+          altText="baby on clean carpet"
+          fileName="baby-floor.jpg"
+          classes="w-full rounded-sm"
+        />
+      </div>
+
+      <div className="px-2">
+        <section className="mx-auto w-full px-4 md:py-6 flex flex-col items-center">
+          <h3 className="text-3xl text-center font-extrabold text-purple-600 mb-2">
+            Serving Austin
+          </h3>
+          <hr className="w-1/2 border-t-2 border-purple-700 mb-2" />
+          <p className="font-medium text-lg text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            dolores deserunt! Asperiores earum quidem dolore mollitia nam magni
+            culpa modi, eligendi eaque exercitationem sunt ullam incidunt
+            reiciendis! Temporibus, natus. Veritatis.
+          </p>
+        </section>
+        <section className="mx-auto w-full px-4 md:py-6">
+          <div className="md:flex md:justify-center">
+            <div className="md:w-4/5">
+              <OptimizedCarousel content={carouselImages} />
+            </div>
           </div>
-        </div>
-        <div>
-          {/* Blog */}
-          <section className="flex-1">
-            <Link href="/blog">
-              <h2 className="text-xl md:text-2xl font-bold cursor-pointer hover:text-blue-500">
-                Blog
-              </h2>
-            </Link>
-            <hr className={`mb-2 border-white`} />
-            {blogPosts.map((post) => {
-              return (
-                <Link href={formatPath(post.__resourcePath)} key={post.title}>
-                  <div>
-                    <div className="mb-4 cursor-pointer hover:text-blue-500">
-                      <span className="italic">{post.date}</span> -{' '}
-                      <span className="mr-1 font-bold">{post.title}</span>
-                      <div className={`mt-1 border-l-2 border-white pl-2`}>
-                        {post.excerpt}...
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              )
-            })}
-          </section>
-        </div>
+        </section>
+        <section className="mx-auto w-full px-4 md:py-6">
+          <div className="md:flex my-8 md:py-20">
+            <OptimizedImage
+              fileName="baby-floor.jpg"
+              altText="baby-floor"
+              classes="md:w-1/3 rounded-md"
+            />
+            <div className="md:p-16">
+              <h3 className="text-2xl text-purple-600 font-bold">Customer</h3>
+              <TiPhoneOutline className="text-3xl" />
+              <p className="font-medium text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                dolores deserunt! Asperiores earum quidem dolore mollitia nam
+                magni culpa modi, eligendi eaque exercitationem sunt ullam
+                incidunt reiciendis! Temporibus, natus. Veritatis.
+              </p>
+            </div>
+          </div>
+          <div className="md:flex my-8 md:py-20 flex-row-reverse">
+            <OptimizedImage
+              fileName="baby-floor.jpg"
+              altText="baby-floor"
+              classes="md:w-1/3 rounded-md"
+            />
+            <div className="md:p-16">
+              <h3 className="text-2xl text-purple-600 font-bold">Header</h3>
+              <p className="font-medium text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                dolores deserunt! Asperiores earum quidem dolore mollitia nam
+                magni culpa modi, eligendi eaque exercitationem sunt ullam
+                incidunt reiciendis! Temporibus, natus. Veritatis.
+              </p>
+            </div>
+          </div>
+          <div className="md:flex my-8 md:py-20">
+            <OptimizedImage
+              fileName="baby-floor.jpg"
+              altText="baby-floor"
+              classes="md:w-1/3 rounded-md"
+            />
+            <div className="md:p-16">
+              <h3 className="text-2xl text-purple-600 font-bold">Header</h3>
+              <p className="font-medium text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                dolores deserunt! Asperiores earum quidem dolore mollitia nam
+                magni culpa modi, eligendi eaque exercitationem sunt ullam
+                incidunt reiciendis! Temporibus, natus. Veritatis.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </Default>
   )
