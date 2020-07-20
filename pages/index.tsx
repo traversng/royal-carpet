@@ -58,7 +58,7 @@ export default function Home() {
             reiciendis! Temporibus, natus. Veritatis.
           </p>
         </section>
-        <section className="mx-auto w-full py-4 md:py-6 bg-gray-300">
+        <section className="mx-auto w-full py-4 md:py-6">
           <div className="md:flex md:justify-center">
             <div className="md:w-4/5">
               <OptimizedCarousel content={carouselImages} />
