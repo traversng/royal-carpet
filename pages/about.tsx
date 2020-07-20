@@ -13,9 +13,12 @@ export default function () {
       <div className="px-2 md:flex md:flex-col md:justify-center">
         <section className="mx-auto w-full my-4 px-4 md:py-6 md:flex">
           <div className="w-full">
-            <h3 className="text-3xl font-extrabold text-purple-600 mb-2">
-              Who we are
-            </h3>
+            <div className="flex flex-col justify-center align-middle">
+              <h3 className="text-center text-3xl font-extrabold text-purple-600 mb-2">
+                Who we are
+              </h3>
+              <hr className="border-t-4 self-center border-purple-600 w-1/12" />
+            </div>
             <p className="leading-loose text-xl my-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
               dolores deserunt! Asperiores earum quidem dolore mollitia nam

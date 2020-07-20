@@ -35,7 +35,9 @@ export default function () {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-4">Contact</h2>
+      <h2 className="text-3xl font-extrabold text-purple-600 my-4">
+        Contact Us
+      </h2>
       <form className="w-full max-w-lg" onSubmit={handleSubmit} noValidate>
         <div className="flex flex-wrap -mx-3">
           <div className="w-full md:w-1/2 px-3 md:mb-0">
@@ -46,7 +48,7 @@ export default function () {
               Full Name
             </label>
             <input
-              className={`text-black appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white ${
+              className={`text-black bg-gray-300 appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 ${
                 errors.name ? 'border-l-4 border-red-700' : ''
               }`}
               id="grid-full-name"
@@ -68,7 +70,7 @@ export default function () {
               Email
             </label>
             <input
-              className={`text-black appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus-gray-500 ${
+              className={`text-black bg-gray-300 appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 focus-gray-500 ${
                 errors.email ? 'border-l-4 border-red-700' : ''
               }`}
               id="grid-email"
@@ -89,7 +91,7 @@ export default function () {
             Company
           </label>
           <input
-            className={`text-black appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus-gray-500 ${
+            className={`text-black bg-gray-300 appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 focus-gray-500 ${
               errors.email ? 'border-l-4 border-red-700' : ''
             }`}
             id="company"
@@ -109,9 +111,9 @@ export default function () {
             >
               Message
             </label>
-            <p className="text-gray-600 text-xs italic">How can I help you?</p>
+            <p className="text-gray-600 text-xs italic">How can we help you?</p>
             <textarea
-              className={`text-black appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus-gray-500 ${
+              className={`text-black bg-gray-300 appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 focus-gray-500 ${
                 errors.email ? 'border-l-4 border-red-700' : ''
               }`}
               id="grid-message"

@@ -14,7 +14,7 @@ export default function () {
   const [hidden, setHidden] = useState(true)
 
   return (
-    <nav className="mx-auto flex px-2 py-1 justify-between w-full bg-purple-900">
+    <nav className="mx-auto flex px-2 py-2 justify-between w-full bg-purple-900 md:px-6 md:py-4">
       <Link href="/">
         <h2 className="text-2xl cursor-pointer font-extrabold flex-grow lg:flex-1">
           <a className='text-white hover:text-purple-400'>Royal Carpet & Tile</a>
@@ -36,7 +36,7 @@ export default function () {
               return (
                 <Link href={link.url}>
                   <li className="mx-1">
-                    <a className="text-lg text-white hover:text-purple-400" href="#">
+                    <a className="text-xl font-bold text-white hover:text-purple-400" href="#">
                       {link.text}
                     </a>
                   </li>

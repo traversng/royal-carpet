@@ -48,9 +48,9 @@ export default function Home() {
       <div className="px-2">
         <section className="mx-auto md:w-2/3 my-4 px-4 md:py-6 flex flex-col items-center">
           <h3 className="text-3xl text-center font-extrabold text-purple-600 mb-2">
-            Serving Austin
+            Serving All of Austin
           </h3>
-          <hr className="w-1/2 border-t-2 border-purple-700 mb-2" />
+          <hr className="border-t-4 self-center border-purple-600 w-1/12 mb-2 md:mb-4" />
           <p className="font-medium text-lg text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
             dolores deserunt! Asperiores earum quidem dolore mollitia nam magni
