@@ -221,3 +221,11 @@ pre[class*='language-'] {
   @apply mt-0;
   margin-top: 0!important;
 }
+
+.slick-next:before{
+  @apply text-purple-600 text-xl
+}
+
+.slick-prev:before{
+  @apply text-purple-600 text-xl
+}
