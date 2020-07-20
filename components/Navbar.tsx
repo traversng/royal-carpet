@@ -14,10 +14,10 @@ export default function () {
   const [hidden, setHidden] = useState(true)
 
   return (
-    <nav className="mx-auto flex px-2 py-1 justify-between w-full">
+    <nav className="mx-auto flex px-2 py-1 justify-between w-full bg-purple-900">
       <Link href="/">
-        <h2 className="text-2xl cursor-pointer font-extrabold flex-grow lg:flex-1 hover:text-purple-800">
-          <a className='text-purple-600'>Royal Carpet & Tile</a>
+        <h2 className="text-2xl cursor-pointer font-extrabold flex-grow lg:flex-1">
+          <a className='text-white hover:text-purple-400'>Royal Carpet & Tile</a>
         </h2>
       </Link>
       <div className='flex flex-col items-end'>
@@ -36,7 +36,7 @@ export default function () {
               return (
                 <Link href={link.url}>
                   <li className="mx-1">
-                    <a className="text-lg text-purple-600 hover:text-purple-800" href="#">
+                    <a className="text-lg text-white hover:text-purple-400" href="#">
                       {link.text}
                     </a>
                   </li>

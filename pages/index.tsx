@@ -23,7 +23,7 @@ const carouselImages = [
   {
     fileName: 'baby-floor.jpg',
     altText: 'baby-floor',
-    title: 'Upholstry cleaning',
+    title: 'Upholstery cleaning',
     description: 'Baby on clean carpet after a cleaning service',
   },
 ]
@@ -75,7 +75,7 @@ export default function Home() {
             <div className="md:p-16">
               <div className="flex">
                 <TiPhoneOutline className="hidden md:block text-3xl text-purple-800 m-2" />
-                <h3 className="text-2xl text-purple-600 font-bold">
+                <h3 className="text-2xl text-purple-600 my-2 font-bold">
                   Carpet Cleaning
                 </h3>
               </div>
@@ -96,7 +96,7 @@ export default function Home() {
             <div className="md:p-16">
               <div className="flex">
                 <TiPhoneOutline className="hidden md:block text-3xl text-purple-800 m-2" />
-                <h3 className="text-2xl text-purple-600 font-bold">
+                <h3 className="text-2xl text-purple-600 my-2 font-bold">
                   Tile & Grout
                 </h3>
               </div>
@@ -117,8 +117,8 @@ export default function Home() {
             <div className="md:p-16">
               <div className="flex">
                 <TiPhoneOutline className="hidden md:block text-3xl text-purple-800 m-2" />
-                <h3 className="text-2xl text-purple-600 font-bold">
-                  Upholstry
+                <h3 className="text-2xl text-purple-600 my-2 font-bold">
+                  Upholstery
                 </h3>
               </div>
               <p className="font-medium text-lg">

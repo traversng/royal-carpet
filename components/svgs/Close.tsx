@@ -1,4 +1,4 @@
-export default ({ fill = '#805ad5' }) => {
+export default ({ fill = 'white' }) => {
   return (
     <svg
       width="32"

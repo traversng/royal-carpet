@@ -1,4 +1,4 @@
-export default ({ fill = '#805ad5' }) => {
+export default ({ fill = 'white' }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
