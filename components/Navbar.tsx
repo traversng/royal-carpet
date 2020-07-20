@@ -19,7 +19,7 @@ export default function () {
       <nav className="flex items-center justify-between flex-wrap bg-purple-900 p-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <Link href="/">
-            <h3 className="cursor-pointer font-semibold text-3xl tracking-tight hover:text-purple-600">
+            <h3 className="cursor-pointer font-semibold text-2xl tracking-tight hover:text-purple-600">
               Royal Carpet & Tile
             </h3>
           </Link>
