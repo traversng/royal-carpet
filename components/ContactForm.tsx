@@ -127,7 +127,7 @@ export default function () {
             )}
             <button
               type="submit"
-              className="bg-transparent hover:bg-white hover:text-black text-white font-semibold py-2 px-4 border border-white hover:border-transparent rounded"
+              className="btn"
             >
               {isSubmitting ? '...Sending' : 'Send'}
             </button>
