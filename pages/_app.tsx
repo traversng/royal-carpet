@@ -11,7 +11,7 @@ import '../styles/index.css'
 export default function MyApp({ Component, pageProps }) {
 
   return (
-    <div className={`mx-auto md:px-8`}>
+    <div className={`mx-auto`}>
       <Component {...pageProps} />
     </div>
   )

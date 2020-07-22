@@ -11,7 +11,7 @@ export default function () {
         description="Travis Ueki - Contact"
         url="contact"
       />
-      <div className="md:flex md:flex-col md:items-center md:justify-center">
+      <div className="container mx-auto md:flex md:flex-col md:items-center md:justify-center">
         <div className="w-full">
           <OptimizedImage
             altText="baby on clean carpet"

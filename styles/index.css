@@ -1,46 +1,47 @@
 @import '../node_modules/prismjs/themes/prism-tomorrow.css';
 
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@400;500&display=swap');
 
 /* purgecss start ignore */
 @tailwind base;
 
 h1 {
   @apply text-2xl;
-  font-family: 'Lato', sans-serif
+  font-weight: 900
 }
 h2 {
   @apply text-xl;
-  font-family: 'Lato', sans-serif
+  font-weight: 700
 }
 h3 {
   @apply text-lg;
-  font-family: 'Lato', sans-serif
+  font-weight: 700
 }
 h4 {
   @apply text-base;
-  font-family: 'Lato', sans-serif
 }
 h5 {
   @apply text-sm;
-  font-family: 'Lato', sans-serif
 }
 h6 {
   @apply text-xs;
-  font-family: 'Lato', sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
 }
 
 body: {
-  font-family: 'Raleway', sans-serif
+  font-family: 'Raleway', sans-serif;
 }
 
 .btn {
-  @apply bg-transparent text-purple-600 font-semibold py-2 px-4 border border-purple-600 rounded;
+  @apply bg-transparent text-white font-semibold py-2 px-4 border border-white rounded;
 }
 
 .btn:hover {
-  @apply bg-purple-600 border-transparent text-white;
+  @apply bg-blue-600 border-transparent text-white;
 }
 
 /* purgecss end ignore */
@@ -63,7 +64,7 @@ body: {
   @apply bg-white;
   @apply p-2;
   @apply text-black;
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
 /* Additional vertical padding used by kbd tag. */
@@ -136,7 +137,7 @@ body: {
   @apply leading-none;
   @apply text-base;
   @apply font-semibold;
-  @apply mb-4; 
+  @apply mb-4;
   @apply mt-6;
 }
 
@@ -227,13 +228,35 @@ body: {
 
 pre[class*='language-'] {
   @apply mt-0;
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
-.slick-next:before{
-  @apply text-purple-600 text-xl
+.slick-next:before {
+  @apply text-brand text-xl;
 }
 
-.slick-prev:before{
-  @apply text-purple-600 text-xl
+.slick-prev:before {
+  @apply text-brand text-xl;
+}
+
+.bg-brand {
+  background-color: #3a55ba;
+}
+
+.text-brand {
+  color: #3a55ba;
+}
+
+.border-brand {
+  border-color: #3a55ba;
+}
+
+.gradient-brand {
+  background: rgb(0, 44, 194);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 44, 194, 1) 0%,
+    rgba(58, 85, 186, 1) 50%,
+    rgba(0, 182, 255, 1) 100%
+  );
 }

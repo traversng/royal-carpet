@@ -60,9 +60,9 @@ class Default extends React.Component {
 
   render() {
     return (
-      <div className="flex flex-col container md:mx-auto md:w-full min-h-screen">
+      <div className="flex flex-col md:mx-auto md:w-full min-h-screen">
         <Navbar />
-        <main className="flex-col flex-grow w-full md:flex md:mx-auto">
+        <main className="flex-col flex-grow w-full">
           {this.props.children}
         </main>
         <Footer />

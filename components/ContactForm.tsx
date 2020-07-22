@@ -4,7 +4,7 @@ import { validateForm } from '../utils/validateForm'
 
 export default function () {
   const submit = async () => {
-    const response = await fetch('api/contact', {
+    const response = await fetch('api/airtable', {
       method: 'POST',
       headers: {
         secret: process.env.SITE_SECRET,
@@ -35,7 +35,7 @@ export default function () {
 
   return (
     <div>
-      <h2 className="text-3xl font-extrabold text-purple-600 my-4">
+      <h2 className="text-3xl font-extrabold text-brand my-4">
         Contact Us
       </h2>
       <form className="w-full max-w-lg" onSubmit={handleSubmit} noValidate>

@@ -33,11 +33,8 @@ module.exports = withPlugins([
   [optimizedImages],
   {
     env: {
-      GMAIL_ADDRESS: process.env.GMAIL_ADDRESS,
-      GMAIL_PASSWORD: process.env.GMAIL_PASSWORD,
-      CONTACT_ADDRESS: process.env.CONTACT_ADDRESS,
-      SITE_SECRET: process.env.SITE_SECRET,
       AIRTABLE_API_KEY: process.env.AIRTABLE_API_KEY,
+      AIRTABLE_BASE_ID: process.env.AIRTABLE_BASE_ID
     },
   },
 ])
