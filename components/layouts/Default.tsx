@@ -53,7 +53,7 @@ class Default extends React.Component {
         (n.src = 'https://w.chatlio.com/w.chatlio-widget.js'),
         (n.async = !0),
         n.setAttribute('data-embed-version', '2.3')
-      n.setAttribute('data-widget-id', '7e2c1e35-7e41-46bb-4227-f4eac4c292f3')
+      n.setAttribute('data-widget-id', 'd1fa7951-0e26-4cdb-4891-6cf888e81296')
       c.parentNode.insertBefore(n, c)
     })()
   }
