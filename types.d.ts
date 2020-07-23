@@ -1,3 +1,13 @@
+export interface Review {
+  reviewer: string
+  quote: string
+  source: string
+  date: string
+  link: string
+  rating: number
+  title?: string
+}
+
 export interface FrontMatter {
   layout: string
   title: string

@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import Menu from '../components/svgs/Menu'
 import Close from '../components/svgs/Close'
+import OptimizedImage from '../components/OptimizedImage'
 
 const links = [
   { text: 'About', url: '/about' },
@@ -17,11 +18,15 @@ export default function () {
   return (
     <>
       <nav className="flex items-center justify-between flex-wrap gradient-brand p-6">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
+        <div className="flex items-center flex-shrink-1 text-white">
           <Link href="/">
-            <h3 className="cursor-pointer font-semibold text-2xl tracking-tight hover:text-blue-400">
-              Royal Carpet & Tile
-            </h3>
+            <a>
+              <OptimizedImage
+                fileName="logo.png"
+                altText="Royalty Carpet and Tile Logo"
+                classes="w-1/2 md:w-1/5"
+              />
+            </a>
           </Link>
         </div>
         <div className="block md:hidden">
@@ -35,7 +40,9 @@ export default function () {
         </div>
         <div className="w-full block flex-grow md:flex md:items-center md:w-auto">
           <div
-            className={`text-sm md:flex-grow md:flex md:justify-end ${hidden ? 'hidden' : ''}`}
+            className={`text-sm md:flex-grow md:flex md:justify-end ${
+              hidden ? 'hidden' : ''
+            }`}
           >
             <div>
               {links.map((link) => {

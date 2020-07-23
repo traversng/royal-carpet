@@ -73,7 +73,7 @@ export default function () {
             </h3>
             <hr className="border-t-4 border-brand w-1/12 mb-4" />
           </div>
-          <p className="leading-relaxed">
+          <p className="leading-loose my-4">
             Royalty Carpet & Upholstery Cleaning has been a family business
             since 1986. Robert Winchell opened Royalty Carpet & Upholstery
             Cleaning in 1986 after retiring from the Air Force in Merced,
@@ -83,14 +83,14 @@ export default function () {
             trend of hard surfaces. In 2018 Kelly McNeil joined the family
             business and the company relocated to Round Rock, TX.
           </p>
-          <p className="leading-relaxed">
+          <p className="leading-loose my-4">
             It's important for us to continue to focus on our customers and to
             treat each person and each job as a unique opportunity to establish
             a long term relationship. With over 32 years in the business, we
             couldn't have done it without our wonderful customers and while we
             miss them terribly, we are excited to start this new chapter.
           </p>
-          <p className="leading-relaxed">
+          <p className="leading-loose my-4">
             Our company mission statement, "personalized service, committed to
             excellence" applies to everything that we do and adds value to every
             job. We take our time to listen to you in order to find the best

@@ -1,6 +1,10 @@
 import ReactCompareImage from 'react-compare-image'
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
+import Rating from 'react-rating'
+
 import DefaultLayout from '../components/layouts/Default'
 import SEO from '../components/SEO'
+import { reviews } from '../data/reviews'
 
 export default function () {
   return (
@@ -67,61 +71,36 @@ export default function () {
           </h3>
           <hr className="border-t-4 self-center border-brand w-1/12 mb-2 md:mb-4" />
           <div className="grid grid-cols-1 grid-gap-2 md:grid-cols-3">
-            <div className="p-4 leading-relaxed">
-              <h3 className="text-brand">Best Service Ever!</h3>
-              <p className="text-gray-600 italic">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                beatae incidunt, voluptate cumque amet asperiores? Quisquam,
-                reiciendis ratione laborum quis nesciunt ea laboriosam amet
-                aspernatur libero inventore repellendus aperiam alias?
-              </p>
-              <h4 className="font-bold text-brand">- Jon Snow</h4>
-              <p className="text-sm text-gray-600">source: Facebook</p>
-            </div>
-            <div className="p-4 leading-relaxed">
-              <h3 className="text-brand">Best Service Ever!</h3>
-              <p className="text-gray-600 italic">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                beatae incidunt, voluptate cumque amet asperiores? Quisquam,
-                reiciendis ratione laborum quis nesciunt ea laboriosam amet
-                aspernatur libero inventore repellendus aperiam alias?
-              </p>
-              <h4 className="font-bold text-brand">- Jon Snow</h4>
-              <p className="text-sm text-gray-600">source: Facebook</p>
-            </div>
-            <div className="p-4 leading-relaxed">
-              <h3 className="text-brand">Best Service Ever!</h3>
-              <p className="text-gray-600 italic">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                beatae incidunt, voluptate cumque amet asperiores? Quisquam,
-                reiciendis ratione laborum quis nesciunt ea laboriosam amet
-                aspernatur libero inventore repellendus aperiam alias?
-              </p>
-              <h4 className="font-bold text-brand">- Jon Snow</h4>
-              <p className="text-sm text-gray-600">source: Facebook</p>
-            </div>
-            <div className="p-4 leading-relaxed">
-              <h3 className="text-brand">Best Service Ever!</h3>
-              <p className="text-gray-600 italic">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                beatae incidunt, voluptate cumque amet asperiores? Quisquam,
-                reiciendis ratione laborum quis nesciunt ea laboriosam amet
-                aspernatur libero inventore repellendus aperiam alias?
-              </p>
-              <h4 className="font-bold text-brand">- Jon Snow</h4>
-              <p className="text-sm text-gray-600">source: Facebook</p>
-            </div>
-            <div className="p-4 leading-relaxed">
-              <h3 className="text-brand">Best Service Ever!</h3>
-              <p className="text-gray-600 italic">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                beatae incidunt, voluptate cumque amet asperiores? Quisquam,
-                reiciendis ratione laborum quis nesciunt ea laboriosam amet
-                aspernatur libero inventore repellendus aperiam alias?
-              </p>
-              <h4 className="font-bold text-brand">- Jon Snow</h4>
-              <p className="text-sm text-gray-600">source: Facebook</p>
-            </div>
+            {reviews &&
+              reviews.map((review) => {
+                return (
+                  <div className="p-4 leading-relaxed">
+                    {review.title && (
+                      <h3 className="text-brand">{review.title}</h3>
+                    )}
+                    <p className="text-gray-600 italic">{review.quote}</p>
+                    <h4 className="font-bold text-brand">
+                      - {review.reviewer}
+                    </h4>
+                    <span>
+                      {review.rating && (
+                        <Rating
+                          initialRating={review.rating}
+                          emptySymbol={
+                            <AiOutlineStar className="text-yellow-500" />
+                          }
+                          fullSymbol={
+                            <AiFillStar className="text-yellow-500" />
+                          }
+                        />
+                      )}
+                    </span>
+                    <p className="text-sm text-gray-600">
+                      source: <a href={review.link} target='_blank' className='text-blue-600'>{review.source}</a>
+                    </p>
+                  </div>
+                )
+              })}
           </div>
         </div>
       </div>

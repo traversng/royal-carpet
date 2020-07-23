@@ -1,6 +1,6 @@
 import Slider from 'react-slick'
-
-import OptimizedImage from './OptimizedImage'
+import Rating from 'react-rating'
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 
 export const OptimizedCarousel = ({ content }) => {
   const settings = {
@@ -15,26 +15,23 @@ export const OptimizedCarousel = ({ content }) => {
   }
   return (
     <Slider {...settings}>
-      {content.map((info, i) => {
+      {content.map((review, i) => {
         return (
-          // <div className="rounded-md shadow-lg">
-          //   <OptimizedImage
-          //     fileName={info.fileName}
-          //     classes={info.classes}
-          //     altText={info.altText}
-          //   />
-          //   <div className="px-6 py-4 bg-gray-200">
-          //     <div className="font-bold text-xl mb-2 text-brand">
-          //       {info.title}
-          //     </div>
-          //     <p className="text-gray-700 text-base">{info.description}</p>
-          //   </div>
-          // </div>
-          <div className="p-4 leading-relaxed">
-            <h3>{info.title}</h3>
-            <p className="text-gray-600 italic">{info.quote}</p>
-            <h4 className="font-bold">- {info.reviewer}</h4>
-            <p className="text-sm text-gray-600">source: {info.source}</p>
+          <div className="p-4 leading-relaxed bg-gray-200">
+            {review.title && <h3>{review.title}</h3>}
+            <p className="italic">{review.quote}</p>
+            <h4 className="font-bold">- {review.reviewer}</h4>
+            <span>
+              {review.rating && (
+                <Rating
+                  initialRating={review.rating}
+                  emptySymbol={<AiOutlineStar className="text-yellow-500" />}
+                  fullSymbol={<AiFillStar className="text-yellow-500" />}
+                />
+              )}
+            </span>
+            <p className="text-sm text-gray-600">{review.date}</p>
+            <p className="text-sm text-gray-600">source: {review.source}</p>
           </div>
         )
       })}

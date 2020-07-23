@@ -1,11 +1,12 @@
-import Link from 'next/link'
 import { TiPhoneOutline } from 'react-icons/ti'
+import Rating from 'react-rating'
 
 import Default from '../components/layouts/Default'
 import SEO from '../components/SEO'
 import config from '../utils/config'
 import OptimizedImage from '../components/OptimizedImage'
 import OptimizedCarousel from '../components/OptimizedCarousel'
+import { reviews } from "../data/reviews";
 
 const carouselImages = [
   {
@@ -25,33 +26,6 @@ const carouselImages = [
     altText: 'baby-floor',
     title: 'Upholstery cleaning',
     description: 'Baby on clean carpet after a cleaning service',
-  },
-]
-
-const testimonialCarousel = [
-  {
-    reviewer: 'Jon Snow',
-    title: 'Great Work!',
-    quote: 'They are simply the best! Mollit commodo aute reprehenderit dolore reprehenderit quis id aliquip proident incididunt ad.',
-    source: 'yelp'
-  },
-  {
-    reviewer: 'Jon Snow',
-    title: 'Great Work!',
-    quote: 'They are simply the best! Mollit commodo aute reprehenderit dolore reprehenderit quis id aliquip proident incididunt ad.',
-    source: 'yelp'
-  },
-  {
-    reviewer: 'Jon Snow',
-    title: 'Great Work!',
-    quote: 'They are simply the best! Mollit commodo aute reprehenderit dolore reprehenderit quis id aliquip proident incididunt ad.',
-    source: 'yelp'
-  },
-  {
-    reviewer: 'Jon Snow',
-    title: 'Great Work!',
-    quote: 'They are simply the best! Mollit commodo aute reprehenderit dolore reprehenderit quis id aliquip proident incididunt ad.',
-    source: 'yelp'
   },
 ]
 
@@ -112,7 +86,7 @@ export default function Home() {
           <section className="mx-auto w-full py-4 md:py-6">
             <div className="md:flex md:justify-center">
               <div className="md:w-4/5">
-                <OptimizedCarousel content={testimonialCarousel} />
+                <OptimizedCarousel content={reviews} />
               </div>
             </div>
           </section>
