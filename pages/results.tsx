@@ -16,14 +16,14 @@ export default function () {
       />
       <div className="container mx-auto">
         <div className="flex flex-col justify-center align-middle">
-          <h3 className="text-center text-3xl font-extrabold text-brand mt-4 mb-2">
+          <h3 className="text-center text-3xl font-extrabold  mt-4 mb-2">
             Expect Results
           </h3>
           <hr className="border-t-4 self-center border-brand w-1/12" />
         </div>
         <div className="grid gap-2 px-4 md:gap-6 md:grid-cols-3">
           <div className="my-6">
-            <h3 className="text-2xl text-brand mb-4 font-bold md:my-4">
+            <h3 className="text-2xl  mb-4 font-bold md:my-4">
               Carpet Cleaning - Round Rock
             </h3>
             <ReactCompareImage
@@ -37,7 +37,7 @@ export default function () {
             </p>
           </div>
           <div className="my-6">
-            <h3 className="text-2xl text-brand my-4 font-bold">
+            <h3 className="text-2xl  my-4 font-bold">
               Tile Cleaning - Round Rock
             </h3>
             <ReactCompareImage
@@ -51,7 +51,7 @@ export default function () {
             </p>
           </div>
           <div className="my-6">
-            <h3 className="text-2xl text-brand my-4 font-bold">
+            <h3 className="text-2xl  my-4 font-bold">
               Upholstery Cleaning - Round Rock
             </h3>
             <ReactCompareImage
@@ -66,7 +66,7 @@ export default function () {
           </div>
         </div>
         <div className="flex flex-col items-center px-4 my-8">
-          <h3 className="text-3xl text-center font-extrabold text-brand mb-2">
+          <h3 className="text-3xl text-center font-extrabold  mb-2">
             Reviews
           </h3>
           <hr className="border-t-4 self-center border-brand w-1/12 mb-2 md:mb-4" />
@@ -76,10 +76,10 @@ export default function () {
                 return (
                   <div className="p-4 leading-relaxed">
                     {review.title && (
-                      <h3 className="text-brand">{review.title}</h3>
+                      <h3 className="">{review.title}</h3>
                     )}
                     <p className="text-gray-600 italic">{review.quote}</p>
-                    <h4 className="font-bold text-brand">
+                    <h4 className="font-bold ">
                       - {review.reviewer}
                     </h4>
                     <span>

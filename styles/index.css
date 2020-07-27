@@ -6,6 +6,11 @@
 /* purgecss start ignore */
 @tailwind base;
 
+:root {
+  --main-brand-color: #F2E3BD;
+  --main-brand-color-medium: #E8CE8B;
+}
+
 h1 {
   @apply text-2xl;
   font-weight: 900
@@ -30,18 +35,12 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
+  @apply text-gray-900;
 }
 
 body: {
   font-family: 'Raleway', sans-serif;
-}
-
-.btn {
-  @apply bg-transparent text-white font-semibold py-2 px-4 border border-white rounded;
-}
-
-.btn:hover {
-  @apply bg-blue-600 border-transparent text-white;
+  @apply text-gray-900;
 }
 
 /* purgecss end ignore */
@@ -232,27 +231,35 @@ pre[class*='language-'] {
 }
 
 .slick-next:before {
-  @apply text-brand text-xl;
+  @apply  text-xl;
 }
 
 .slick-prev:before {
-  @apply text-brand text-xl;
+  @apply  text-xl;
 }
 
 .slick-track {
-  @apply bg-gray-200
+  @apply bg-gray-200;
 }
 
 .bg-brand {
-  background-color: #3a55ba;
+  background-color: var(--main-brand-color);
+}
+
+.bg-brand-med {
+  background-color: var(--main-brand-color-medium);
 }
 
 .text-brand {
-  color: #3a55ba;
+  color: var(--main-brand-color);
+}
+
+.text-brand-med {
+  color: var(--main-brand-color-medium);
 }
 
 .border-brand {
-  border-color: #3a55ba;
+  border-color: var(--main-brand-color);
 }
 
 .gradient-brand {
@@ -263,4 +270,12 @@ pre[class*='language-'] {
     rgba(58, 85, 186, 1) 50%,
     rgba(0, 182, 255, 1) 100%
   );
+}
+
+.btn {
+  @apply font-semibold inline-block px-4 py-2 leading-none border rounded border-black mt-4
+}
+
+.btn:hover {
+  @apply border-transparent bg-black text-white
 }

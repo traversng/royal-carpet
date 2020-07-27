@@ -17,22 +17,25 @@ export default function () {
 
   return (
     <>
-      <nav className="flex items-center justify-between flex-wrap gradient-brand p-6">
-        <div className="flex items-center flex-shrink-1 text-white">
+      <nav className="flex md:flex-col items-center justify-between flex-wrap p-6 text-gray-900">
+        <div className="flex items-center flex-shrink-1">
           <Link href="/">
             <a>
-              <OptimizedImage
+              {/* <OptimizedImage
                 fileName="logo.png"
                 altText="Royalty Carpet and Tile Logo"
                 classes="w-1/2 md:w-1/5"
-              />
+              /> */}
+              <h2 className="text-2xl md:text-3xl font-bold">
+                Royalty Carpet & Tile
+              </h2>
             </a>
           </Link>
         </div>
         <div className="block md:hidden">
           {/* Hamburger */}
           <button
-            className="rounded-md border border-white focus:outline-none"
+            className="rounded-md border border-black focus:outline-none"
             onClick={() => setHidden(!hidden)}
           >
             {hidden ? <Menu /> : <Close />}
@@ -40,7 +43,7 @@ export default function () {
         </div>
         <div className="w-full block flex-grow md:flex md:items-center md:w-auto">
           <div
-            className={`text-sm md:flex-grow md:flex md:justify-end ${
+            className={`md:flex-grow md:flex md:justify-end ${
               hidden ? 'hidden' : ''
             }`}
           >
@@ -48,16 +51,16 @@ export default function () {
               {links.map((link) => {
                 return (
                   <Link href={link.url}>
-                    <a className="mx-1 block mt-4 text-lg font-semibold md:inline-block md:mt-0 text-white hover:text-blue-400 mr-4">
-                      {link.text}
+                    <a>
+                      <div className="mx-1 block mt-4 font-semibold md:inline-block md:mt-0 hover:text-gray-700 mr-4">
+                        {link.text}
+                      </div>
                     </a>
                   </Link>
                 )
               })}
               <Link href="contact">
-                <a className="inline-block text-lg px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:bg-blue-400 mt-4 md:mt-0">
-                  Contact
-                </a>
+                <a className="btn text-md">Contact</a>
               </Link>
             </div>
           </div>

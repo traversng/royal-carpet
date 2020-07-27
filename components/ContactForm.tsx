@@ -35,7 +35,7 @@ export default function () {
 
   return (
     <div>
-      <h2 className="text-3xl font-extrabold text-brand my-4">
+      <h2 className="text-3xl font-extrabold  my-4">
         Contact Us
       </h2>
       <form className="w-full max-w-lg" onSubmit={handleSubmit} noValidate>

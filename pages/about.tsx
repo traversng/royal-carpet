@@ -14,19 +14,19 @@ export default function () {
         <section className="mx-auto w-full my-4 px-4 md:py-6 md:flex">
           <div className="w-full mb-4">
             <div className="flex flex-col justify-center align-middle">
-              <h3 className="text-3xl font-bold text-brand mb-2">
+              <h3 className="text-3xl font-bold  mb-2">
                 In a nutshell
               </h3>
               <hr className="border-t-4 border-brand w-1/12 mb-4" />
             </div>
             <div>
-              <h3 className="font-bold text-xl text-brand">Owner operated.</h3>
+              <h3 className="font-bold text-xl ">Owner operated.</h3>
               <span className="text-sm italic text-gray-600">
                 which means you have an owner at each job.
               </span>
             </div>
             <div>
-              <h3 className="font-bold text-xl text-brand">
+              <h3 className="font-bold text-xl ">
                 We have been in business since 1986.
               </h3>
               <span className="text-sm italic text-gray-600">
@@ -34,7 +34,7 @@ export default function () {
               </span>
             </div>
             <div>
-              <h3 className="font-bold text-xl text-brand">
+              <h3 className="font-bold text-xl ">
                 We believe what we do is important
               </h3>
               <span className="text-sm italic text-gray-600">
@@ -43,13 +43,13 @@ export default function () {
               </span>
             </div>
             <div>
-              <h3 className="font-bold text-xl text-brand">We take pride in our work</h3>
+              <h3 className="font-bold text-xl ">We take pride in our work</h3>
               <span className="text-sm italic text-gray-600">
                 We don't take shortcuts!
               </span>
             </div>
             <div>
-              <h3 className="font-bold text-xl text-brand">
+              <h3 className="font-bold text-xl ">
                 We believe in respecting your time, family, pets, furniture, and
                 wall corners.
               </h3>
@@ -68,7 +68,7 @@ export default function () {
         </section>
         <section className="mx-auto w-full my-4 px-4 md:py-6">
           <div>
-            <h3 className="text-3xl font-extrabold text-brand mb-2">
+            <h3 className="text-3xl font-extrabold  mb-2">
               Where we started
             </h3>
             <hr className="border-t-4 border-brand w-1/12 mb-4" />
