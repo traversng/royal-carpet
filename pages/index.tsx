@@ -38,11 +38,11 @@ export default function Home() {
         image={config.images.default}
         url={config.liveUrl}
       />
-      <div className="w-full flex justify-center">
+      <div className="w-full rounded-sm md:flex md:justify-center">
         <OptimizedImage
           altText="baby on clean carpet"
           fileName="baby-floor.jpg"
-          classes="w-full rounded-sm max-w-screen-xl"
+          classes="md:max-w-screen-xl"
         />
       </div>
 
