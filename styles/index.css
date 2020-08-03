@@ -1,19 +1,22 @@
 @import '../node_modules/prismjs/themes/prism-tomorrow.css';
 
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@400;500&family=Poiret+One&family=Open+Sans&display=swap');
 
 /* purgecss start ignore */
 @tailwind base;
 
 :root {
-  --main-brand-color: #F2E3BD;
-  --main-brand-color-medium: #E8CE8B;
+  --main-brand-color: #eee;
+  --main-header-font: 'Poiret One', cursive;
+  --main-paragraph-font: 'Open Sans', sans-serif;
+  --main-brand-color-medium: rgb(160, 174, 192);
 }
 
 h1 {
   @apply text-2xl;
-  font-weight: 900
+  font-weight: 900;
+  font-family: var(--main-header-font)
 }
 h2 {
   @apply text-xl;
@@ -33,13 +36,13 @@ h6 {
   @apply text-xs;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+h2, h3, h4, h5, h6 {
+  font-family: var(--main-header-font);
   @apply text-gray-900;
 }
 
-body: {
-  font-family: 'Raleway', sans-serif;
+body, p, a {
+  font-family: var(--main-paragraph-font);
   @apply text-gray-900;
 }
 
@@ -260,6 +263,10 @@ pre[class*='language-'] {
 
 .border-brand {
   border-color: var(--main-brand-color);
+}
+
+.border-brand-med {
+  border-color: var(--main-brand-color-medium);
 }
 
 .gradient-brand {

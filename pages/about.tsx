@@ -17,7 +17,7 @@ export default function () {
               <h3 className="text-3xl font-bold  mb-2">
                 In a nutshell
               </h3>
-              <hr className="border-t-4 border-brand w-1/12 mb-4" />
+              <hr className="border-t-4 border-brand-medium w-1/12 mb-4" />
             </div>
             <div>
               <h3 className="font-bold text-xl ">Owner operated.</h3>
@@ -71,7 +71,7 @@ export default function () {
             <h3 className="text-3xl font-extrabold  mb-2">
               Where we started
             </h3>
-            <hr className="border-t-4 border-brand w-1/12 mb-4" />
+            <hr className="border-t-4 border-brand-medium w-1/12 mb-4" />
           </div>
           <p className="leading-loose my-4">
             Royalty Carpet & Upholstery Cleaning has been a family business

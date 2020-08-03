@@ -19,7 +19,7 @@ export default function () {
           <h3 className="text-center text-3xl font-extrabold  mt-4 mb-2">
             Expect Results
           </h3>
-          <hr className="border-t-4 self-center border-brand w-1/12" />
+          <hr className="border-t-4 self-center border-brand-medium w-1/12" />
         </div>
         <div className="grid gap-2 px-4 md:gap-6 md:grid-cols-3">
           <div className="my-6">
@@ -69,7 +69,7 @@ export default function () {
           <h3 className="text-3xl text-center font-extrabold  mb-2">
             Reviews
           </h3>
-          <hr className="border-t-4 self-center border-brand w-1/12 mb-2 md:mb-4" />
+          <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
           <div className="grid grid-cols-1 grid-gap-2 md:grid-cols-3">
             {reviews &&
               reviews.map((review) => {

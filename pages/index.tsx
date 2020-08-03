@@ -52,7 +52,7 @@ export default function Home() {
             <h3 className="text-3xl text-center font-extrabold  mb-2">
               Serving All of Austin
             </h3>
-            <hr className="border-t-4 self-center border-brand w-1/12 mb-2 md:mb-4" />
+            <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
             <p className="font-medium text-lg text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
               dolores deserunt! Asperiores earum quidem dolore mollitia nam
@@ -104,7 +104,7 @@ export default function Home() {
                   {/* <TiPhoneOutline className="hidden md:block text-3xl m-2" /> */}
                   <h3 className="text-2xl  my-2 font-bold">Carpet Cleaning</h3>
                 </div>
-                <hr className="border-t-4 self-center border-brand w-1/12 mb-2 md:mb-4" />
+                <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
                 <p className="font-medium text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
                   dolores deserunt! Asperiores earum quidem dolore mollitia nam
@@ -126,7 +126,7 @@ export default function Home() {
                   {/* <TiPhoneOutline className="hidden md:block text-3xl m-2" /> */}
                   <h3 className="text-2xl  my-2 font-bold">Tile & Grout</h3>
                 </div>
-                <hr className="border-t-4 self-center border-brand w-1/12 mb-2 md:mb-4" />
+                <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
                 <p className="font-medium text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
                   dolores deserunt! Asperiores earum quidem dolore mollitia nam
@@ -148,7 +148,7 @@ export default function Home() {
                   {/* <TiPhoneOutline className="hidden md:block text-3xl m-2" /> */}
                   <h3 className="text-2xl  my-2 font-bold">Upholstery</h3>
                 </div>
-                <hr className="border-t-4 self-center border-brand w-1/12 mb-2 md:mb-4" />
+                <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
                 <p className="font-medium text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
                   dolores deserunt! Asperiores earum quidem dolore mollitia nam

@@ -7,7 +7,7 @@ const Social = () => {
         <h3 className="text-center text-3xl font-extrabold  mt-4 mb-2">
           Social
         </h3>
-        <hr className="border-t-4 self-center border-brand w-1/12 mb-2 md:mb-4" />
+        <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
         <p className="font-medium text-lg text-center">We're Social Yall!</p>
         <p className="font-medium text-lg text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolores
