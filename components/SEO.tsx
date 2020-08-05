@@ -22,8 +22,8 @@ export default function ({ title, description, url, image }: { title: string, de
         property="og:image"
         content={
           image
-            ? `${config.liveUrl}/static/${image}`
-            : `${config.liveUrl}/static/${config.images.default}`
+            ? require(`/assets/images/${image}`)
+            : require(`/assets/images/${config.images.default}`)
         }
       />
     </Head>
