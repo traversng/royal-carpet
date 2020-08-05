@@ -27,8 +27,8 @@ export default function () {
               Carpet Cleaning - Round Rock
             </h3>
             <ReactCompareImage
-              leftImage={require(`../assets/images/baby-floor.jpg`)}
-              rightImage={require(`../assets/images/clean-carpet-feet.jpg`)}
+              leftImage={require(`../assets/images/room-before.png`)}
+              rightImage={require(`../assets/images/room-after.png`)}
             />
             <p className="my-4 leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -41,8 +41,8 @@ export default function () {
               Tile Cleaning - Round Rock
             </h3>
             <ReactCompareImage
-              leftImage={require(`../assets/images/baby-floor.jpg`)}
-              rightImage={require(`../assets/images/clean-carpet-feet.jpg`)}
+              leftImage={require(`../assets/images/tile-before.png`)}
+              rightImage={require(`../assets/images/tile-after.png`)}
             />
             <p className="my-4 leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -55,8 +55,8 @@ export default function () {
               Upholstery Cleaning - Round Rock
             </h3>
             <ReactCompareImage
-              leftImage={require(`../assets/images/baby-floor.jpg`)}
-              rightImage={require(`../assets/images/clean-carpet-feet.jpg`)}
+              leftImage={require(`../assets/images/up-before.png`)}
+              rightImage={require(`../assets/images/up-after.png`)}
             />
             <p className="my-4 leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.

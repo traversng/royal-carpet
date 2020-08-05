@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { FaFacebook, FaInstagram, FaYelp } from 'react-icons/fa'
 
 export default function () {

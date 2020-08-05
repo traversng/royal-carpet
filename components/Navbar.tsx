@@ -9,7 +9,7 @@ const links = [
   { text: 'About', url: '/about' },
   { text: 'Results', url: '/results' },
   // { text: 'Contact', url: '/contact' },
-  { text: 'Social', url: '/social' },
+  { text: 'Faqs', url: '/faqs' },
 ]
 
 export default function () {
