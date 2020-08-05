@@ -23,7 +23,7 @@ export default function ({ title, description, url, image }: { title: string, de
         content={
           image
             ? require(`../assets/images/${image}`)
-            : require(`../assets/images/${config.images.default}`)
+            : require(`../assets/images/logo.png`)
         }
       />
     </Head>
