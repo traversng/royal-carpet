@@ -60,8 +60,8 @@ export default function () {
           </div>
           <div className="md:w-2/3">
             <OptimizedImage
-              fileName="baby-floor.jpg"
-              altText="baby on clean carpet"
+              fileName="truck.png"
+              altText="Royalty Carpet and Tile Work Truck"
               classes="rounded-md"
             />
           </div>
