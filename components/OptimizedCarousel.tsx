@@ -7,6 +7,7 @@ export const OptimizedCarousel = ({ content }) => {
     dots: true,
     infinite: true,
     speed: 500,
+    autoplaySpeed: 5000,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -31,7 +32,6 @@ export const OptimizedCarousel = ({ content }) => {
               )}
             </span>
             <p className="text-sm text-gray-600">{review.date}</p>
-            <p className="text-sm text-gray-600">source: {review.source}</p>
           </div>
         )
       })}

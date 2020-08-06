@@ -50,14 +50,16 @@ export default function Home() {
         <div className="px-2">
           <section className="mx-auto md:w-2/3 my-4 px-4 md:py-6 flex flex-col items-center">
             <h3 className="text-3xl text-center font-extrabold  mb-2">
-              Serving All of Austin
+              Cleaning All of Austin
             </h3>
             <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
             <p className="font-medium text-lg text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-              dolores deserunt! Asperiores earum quidem dolore mollitia nam
-              magni culpa modi, eligendi eaque exercitationem sunt ullam
-              incidunt reiciendis! Temporibus, natus. Veritatis.
+              Get results and peace of mind with Royalty Carpet & Tile Cleaning
+            </p>
+            <p className="font-medium text-lg text-center">
+              We are here to provide professional cleaning services for your
+              home. We are experienced, picky, and educated professionals that
+              want you as a forever client. You can count on us!
             </p>
             <div className="flex justify-center flex-wrap my-4">
               <span className="flex rounded-full bg-brand-med px-3 py-1 text-xs font-bold mr-3 my-2 text-white">
@@ -106,10 +108,10 @@ export default function Home() {
                 </div>
                 <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
                 <p className="font-medium text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-                  dolores deserunt! Asperiores earum quidem dolore mollitia nam
-                  magni culpa modi, eligendi eaque exercitationem sunt ullam
-                  incidunt reiciendis! Temporibus, natus. Veritatis.
+                  Carpet feels so good on the feet, but life happens! Let us
+                  keep your carpets clean, healthy, and looking fantastic. We
+                  can also take care of pet accidents, spills and stains, and
+                  more. We can even do carpet repairs while we are there.
                 </p>
               </div>
             </div>
@@ -128,10 +130,10 @@ export default function Home() {
                 </div>
                 <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
                 <p className="font-medium text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-                  dolores deserunt! Asperiores earum quidem dolore mollitia nam
-                  magni culpa modi, eligendi eaque exercitationem sunt ullam
-                  incidunt reiciendis! Temporibus, natus. Veritatis.
+                  Tile floors are fantastic for ease of cleaning, but over time
+                  dirt builds up in the grout lines. Grout needs professional
+                  cleaning to truly remove all of the dirt that gets embedded,
+                  which makes the grout get darker and darker.
                 </p>
               </div>
             </div>

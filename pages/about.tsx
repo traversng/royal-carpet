@@ -69,7 +69,7 @@ export default function () {
         <section className="mx-auto w-full my-4 px-4 md:py-6">
           <div>
             <h3 className="text-3xl font-extrabold  mb-2">
-              Where we started
+              The Full Story
             </h3>
             <hr className="border-t-4 border-brand-medium w-1/12 mb-4" />
           </div>

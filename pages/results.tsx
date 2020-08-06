@@ -23,7 +23,7 @@ export default function () {
         </div>
         <div className="grid gap-2 px-4 md:gap-6 md:grid-cols-3">
           <div className="my-6">
-            <h3 className="text-2xl  mb-4 font-bold md:my-4">
+            <h3 className="text-2xl mb-4 font-bold md:my-4">
               Carpet Cleaning - Round Rock
             </h3>
             <ReactCompareImage
@@ -37,12 +37,13 @@ export default function () {
             </p>
           </div>
           <div className="my-6">
-            <h3 className="text-2xl  my-4 font-bold">
+            <h3 className="text-2xl my-4 font-bold">
               Tile Cleaning - Round Rock
             </h3>
             <ReactCompareImage
               leftImage={require(`../assets/images/tile-before.png`)}
               rightImage={require(`../assets/images/tile-after.png`)}
+              rightImageCss={{ height: '100%' }}
             />
             <p className="my-4 leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -51,12 +52,13 @@ export default function () {
             </p>
           </div>
           <div className="my-6">
-            <h3 className="text-2xl  my-4 font-bold">
+            <h3 className="text-2xl my-4 font-bold">
               Upholstery Cleaning - Round Rock
             </h3>
             <ReactCompareImage
-              leftImage={require(`../assets/images/up-before.png`)}
-              rightImage={require(`../assets/images/up-after.png`)}
+              leftImage={require(`../assets/images/upholstery-dirty.png`)}
+              rightImage={require(`../assets/images/upholstery-clean.png`)}
+              rightImageCss={{ height: '100%' }}
             />
             <p className="my-4 leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -66,22 +68,24 @@ export default function () {
           </div>
         </div>
         <div className="flex flex-col items-center px-4 my-8">
-          <h3 className="text-3xl text-center font-extrabold  mb-2">
-            Reviews
-          </h3>
+          <a
+            href="https://client.housecallpro.com/reviews/Royalty-Carpet-&-Tile-Cleaning/b0c4c76e-5c25-41d4-b35f-1584f801d811"
+            target="_blank"
+            className="text-blue-600"
+          >
+            <h3 className="text-blue-600 text-3xl text-center font-extrabold  mb-2">
+              Reviews
+            </h3>
+          </a>
           <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
           <div className="grid grid-cols-1 grid-gap-2 md:grid-cols-3">
             {reviews &&
               reviews.map((review) => {
                 return (
                   <div className="p-4 leading-relaxed">
-                    {review.title && (
-                      <h3 className="">{review.title}</h3>
-                    )}
+                    {review.title && <h3 className="">{review.title}</h3>}
                     <p className="text-gray-600 italic">{review.quote}</p>
-                    <h4 className="font-bold ">
-                      - {review.reviewer}
-                    </h4>
+                    <h4 className="font-bold ">- {review.reviewer}</h4>
                     <span>
                       {review.rating && (
                         <Rating
@@ -95,9 +99,6 @@ export default function () {
                         />
                       )}
                     </span>
-                    <p className="text-sm text-gray-600">
-                      source: <a href={review.link} target='_blank' className='text-blue-600'>{review.source}</a>
-                    </p>
                   </div>
                 )
               })}
