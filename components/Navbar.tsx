@@ -9,7 +9,7 @@ const links = [
   { text: 'About', url: '/about' },
   { text: 'Results', url: '/results' },
   // { text: 'Contact', url: '/contact' },
-  { text: 'Faqs', url: '/faqs' },
+  { text: 'FAQS', url: '/faqs' },
 ]
 
 export default function () {
@@ -50,7 +50,7 @@ export default function () {
             <div>
               {links.map((link) => {
                 return (
-                  <Link href={link.url}>
+                  <Link href={link.url} key={link.url}>
                     <a>
                       <div className="mx-1 block mt-4 font-semibold md:inline-block md:mt-0 hover:text-gray-700 mr-4">
                         {link.text}

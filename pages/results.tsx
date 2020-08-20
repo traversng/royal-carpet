@@ -23,48 +23,98 @@ export default function () {
         </div>
         <div className="grid gap-2 px-4 md:gap-6 md:grid-cols-3">
           <div className="my-6">
-            <h3 className="text-2xl mb-4 font-bold md:my-4">
-              Carpet Cleaning - Round Rock
-            </h3>
+            <h3 className="text-2xl mb-4 font-bold md:my-4 text-center">Carpet Cleaning</h3>
             <ReactCompareImage
               leftImage={require(`../assets/images/room-before.png`)}
               rightImage={require(`../assets/images/room-after.png`)}
             />
-            <p className="my-4 leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Cupiditate, laborum. Esse molestiae odio hic quibusdam ullam
-              aliquid cupiditate nulla excepturi expedita consectetur!
-            </p>
+            <div className="px-2">
+              <h3 className="text-xl font-bold mt-2 text-center">Carpet Care Tips</h3>
+              <ul className="list-disc ml-6">
+                <li>Take your shoes off</li>
+                <li>Put an entry mat at all entrances</li>
+                <li>Vacuum frequently (try for every other day)</li>
+                <li>
+                  If a spill happens, blot as much of the liquid as possible
+                  before it sets. Do not scrub, it will damage the fibers of
+                  your carpet.
+                </li>
+                <li>Call us and we can walk you through it!</li>
+                <li>
+                  Carpet should be professionally cleaned every 12-18 months,
+                  unless someone in your household suffers from allergies and/or
+                  asthma. We recommend daily vacuuming and carpets to be cleaned
+                  every 6-8 months.
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="my-6">
-            <h3 className="text-2xl my-4 font-bold">
-              Tile Cleaning - Round Rock
-            </h3>
+            <h3 className="text-2xl my-4 font-bold text-center">Tile Cleaning</h3>
             <ReactCompareImage
               leftImage={require(`../assets/images/tile-before.png`)}
               rightImage={require(`../assets/images/tile-after.png`)}
               rightImageCss={{ height: '100%' }}
             />
-            <p className="my-4 leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Cupiditate, laborum. Esse molestiae odio hic quibusdam ullam
-              aliquid cupiditate nulla excepturi expedita consectetur!
-            </p>
+            <div className="px-2">
+              <h3 className="text-xl font-bold mt-2 text-center">Tile & Grout Care Tips</h3>
+              <ul className="list-disc ml-6">
+                <li>Vacuum your tile so dirt does not settle in the grout</li>
+                <li>
+                  Clean your tile with a neutral cleaner or water. Follow the
+                  instructions...many cleaners need to be rinsed with water so
+                  that there is no residue. Using a stiff brush for the grout is
+                  recommended.
+                </li>
+                <li>
+                  Do not use anything that adds a shine. This will cause build
+                  up and dullness over time, leading to a costly stripping
+                  process in the future.
+                </li>
+                <li>
+                  Spill something in the grout? Clean up immediately especially
+                  if it is oil based. Oil can stain grout, so it is also
+                  recommended to put dry baking soda over the oil spill to
+                  absorb.
+                </li>
+                <li>
+                  Tile & grout should be professionally cleaned every 12-18
+                  months.
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="my-6">
-            <h3 className="text-2xl my-4 font-bold">
-              Upholstery Cleaning - Round Rock
-            </h3>
+            <h3 className="text-2xl my-4 font-bold text-center">Upholstery Cleaning</h3>
             <ReactCompareImage
               leftImage={require(`../assets/images/upholstery-dirty.png`)}
               rightImage={require(`../assets/images/upholstery-clean.png`)}
               rightImageCss={{ height: '100%' }}
             />
-            <p className="my-4 leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Cupiditate, laborum. Esse molestiae odio hic quibusdam ullam
-              aliquid cupiditate nulla excepturi expedita consectetur!
-            </p>
+            <div className="px-2">
+              <h3 className="text-xl font-bold mt-2 text-center">Upholstery Care Tips</h3>
+              <ul className="list-disc ml-6">
+                <li>
+                  Vacuum as much as possible for your schedule, especially if
+                  you have pets. Pet coats are much oilier, and can build up a
+                  smell over time.
+                </li>
+                <li>
+                  For people, putting a cover over the arms and head area will
+                  keep the oils from your body staining and attracting dirt.
+                </li>
+                <li>
+                  Spills should be cleaned immediately with a dry towel. Blot up
+                  liquid. Upholstery that is cotton or a natural fiber, water
+                  will leave a water ring and will become discolored. Never rub
+                  a spot, it will damage the fibers.
+                </li>
+                <li>
+                  Upholstery should be cleaned every 12-18 months. If you have
+                  pets, consider cleaning it every 6-8 months.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center px-4 my-8">

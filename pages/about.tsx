@@ -14,9 +14,7 @@ export default function () {
         <section className="mx-auto w-full my-4 px-4 md:py-6 md:flex">
           <div className="w-full mb-4">
             <div className="flex flex-col justify-center align-middle">
-              <h3 className="text-3xl font-bold  mb-2">
-                In a nutshell
-              </h3>
+              <h3 className="text-3xl font-bold  mb-2">In a nutshell</h3>
               <hr className="border-t-4 border-brand-medium w-1/12 mb-4" />
             </div>
             <div>
@@ -66,37 +64,190 @@ export default function () {
             />
           </div>
         </section>
-        <section className="mx-auto w-full my-4 px-4 md:py-6">
+        <section className="mx-auto my-4 px-4 md:py-6">
           <div>
-            <h3 className="text-3xl font-extrabold  mb-2">
-              The Full Story
-            </h3>
+            <h3 className="text-3xl font-extrabold  mb-2">The Full Story</h3>
             <hr className="border-t-4 border-brand-medium w-1/12 mb-4" />
           </div>
-          <p className="leading-loose my-4">
-            Royalty Carpet & Upholstery Cleaning has been a family business
-            since 1986. Robert Winchell opened Royalty Carpet & Upholstery
-            Cleaning in 1986 after retiring from the Air Force in Merced,
-            California. In 2010 his son, Craig Winchell, took over the family
-            business and renamed the company to Royalty Carpet & Tile Cleaning,
-            which modernizes the company name while keeping up with the flooring
-            trend of hard surfaces. In 2018 Kelly McNeil joined the family
-            business and the company relocated to Round Rock, TX.
-          </p>
-          <p className="leading-loose my-4">
-            It's important for us to continue to focus on our customers and to
-            treat each person and each job as a unique opportunity to establish
-            a long term relationship. With over 32 years in the business, we
-            couldn't have done it without our wonderful customers and while we
-            miss them terribly, we are excited to start this new chapter.
-          </p>
-          <p className="leading-loose my-4">
-            Our company mission statement, "personalized service, committed to
-            excellence" applies to everything that we do and adds value to every
-            job. We take our time to listen to you in order to find the best
-            solution. Each job is unique and we bring our wealth of knowledge
-            and experience to make sure that you are happy!
-          </p>
+          <div>
+            <h4 className="text-2xl font-extrabold  mb-2">Excellence</h4>
+            <p className="leading-loose my-4">
+              Royalty Carpet & Tile Cleaning lives and breathes excellence. It
+              has been a part of our mission statement since 1986, “Personalized
+              Service, Committed to Excellence.” Royalty Carpet & Tile Cleaning
+              rises above our competitors because we focus on our clients and we
+              treat each job as a unique opportunity to establish a long term
+              relationship. We care about our clients happiness, their
+              environment, and their time. In order to do this, we follow the
+              industry standard every single time, and we take extra steps to
+              get our desired results while protecting their investment. How do
+              we do this? We protect corners with corner guards so we don’t ding
+              up their paint, we put stakes in their lawn to protect their lawn
+              and shrubs from being burned by our hot hoses, and we always make
+              sure to make it as perfect as possible.
+            </p>
+            <div className="md:flex md:justify-center">
+              <OptimizedImage
+                fileName="rose-logo.png"
+                altText="Royalty Carpet and Tile Work Truck"
+                classes="rounded-md md:w-1/2"
+              />
+              <OptimizedImage
+                fileName="retro-van.png"
+                altText="Royalty Carpet and Tile Work Truck"
+                classes="rounded-md md:w-1/2"
+              />
+            </div>
+            <p className="leading-loose my-4">
+              Royalty Carpet & Tile Cleaning opened its door in 1986, when Bob
+              Winchell retired from the military. He started Royalty Carpet &
+              Upholstery Cleaning to provide for him and his son Craig (who was
+              12 at the time.) Bob knew that personal relationships were first
+              and foremost. The Royalty logo was a rose, and after he completed
+              a job he would give a rose to every appointment as a sincere thank
+              you. Those relationships kept his business strong and alive, and
+              many of his earliest clients became some of his closest friends.
+              When it was time for him to retire, (for the second time), his son
+              Craig took over the family business in 2010.
+            </p>
+            <div className="md:flex md:justify-center">
+              <OptimizedImage
+                fileName="logo.png"
+                altText="Royalty Carpet and Tile Work Truck"
+                classes="rounded-md md:w-1/2"
+              />
+              <OptimizedImage
+                fileName="dad.png"
+                altText="Royalty Carpet and Tile Work Truck"
+                classes="rounded-md md:w-1/2"
+              />
+            </div>
+          </div>
+          <div className="mt-8">
+            <h4 className="text-2xl font-extrabold  mb-2">Integrity</h4>
+            <p className="leading-loose my-4">
+              Royalty Carpet & Tile Cleaning takes great pride in our integrity,
+              and since we are owner operated the buck stops with us. This
+              personal responsibility ensures our clients the highest technical
+              expertise and the best customer service. At every job, there is an
+              owner present, but we also encourage open communication through a
+              variety of means, whether it is through call, text, email, or
+              social media. We love our job, because honestly, our clients are
+              happy to see us when we arrive, and happy when we finish. It is
+              such a good feeling to be a part of someone's life and make it
+              just a little bit better. In our industry many chemicals can be
+              used that are not always healthy for the environment or the
+              person, and we have made it an integral part of our company that
+              we use environmentally friendly products. We are always happy to
+              provide the safety detail sheets if someone has a particular
+              sensitivity, but we also offer products that have no scent and are
+              hypo-allergenic. This transparency allows our clients to trust in
+              the process. It is our job to make everyone’s environment as
+              healthy as possible.
+            </p>
+          </div>
+          <div className="mt-8">
+            <h4 className="text-2xl font-extrabold  mb-2">Teamwork</h4>
+            <p className="leading-loose my-4">
+              {' '}
+              Craig and I are a pretty awesome team. We are complete opposites,
+              constantly striving for excellence in our business, so that means
+              that we have all the bases covered! We have received countless
+              commendations about our teamwork and have even been asked for
+              marriage advice occasionally! We are proactive in building this
+              teamwork by focusing on our strengths, and while each of us can
+              run each part of the business, Craig’s attention to detail puts
+              him as lead most of the time in the field, with me running support
+              and customer service. In the office, I am the office manager,
+              while Craig is the shop manager. We wear a lot of hats, but we
+              enjoy our work, and it is never dull!
+            </p>
+          </div>
+          <div className="mt-8">
+            <h4 className="text-2xl font-extrabold  mb-2">Trust</h4>
+            <p className="leading-loose my-4">
+              {' '}
+              In order to be trustworthy we demonstrate our commitment to our
+              local business. We do this by guaranteeing our work which is
+              provided by our experience and knowledge. We use the Better
+              Business Bureau, online reviews, and social media to allow our
+              clients to share how they feel about us and our work. It can be
+              difficult to invite someone into your home without having met them
+              before and so we appreciate the online review and referral system
+              that is provided in the online community to all our prospective
+              clients. Trust has grown our business from day one and this is a
+              major pillar of Royalty Carpet & Tile Cleaning.
+            </p>
+            <div className="md:flex md:justify-center">
+              <OptimizedImage
+                fileName="fire-station.png"
+                altText="Royalty Carpet and Tile Work Truck"
+                classes="rounded-md"
+              />
+            </div>
+          </div>
+          <div className="mt-8">
+            <h4 className="text-2xl font-extrabold mb-2">Respect</h4>
+            <p className="leading-loose my-4">
+              At Royalty Carpet & Tile Cleaning we believe you must earn the
+              respect of your clients, your peers, and your vendors. We believe
+              that EVERY interaction deserves respect and therefore we are
+              constantly striving to improve our processes and customer service.
+              We maintain open communication within all of our relationships,
+              and we freely give our knowledge whether someone has a question
+              about a DIY option or if we are mentoring a new carpet cleaning
+              business.
+            </p>
+            <div className="md:flex md:justify-center">
+              <OptimizedImage
+                fileName="door.png"
+                altText="Royalty Carpet and Tile Work Truck"
+                classes="rounded-md"
+              />
+            </div>
+          </div>
+          <div className="mt-8">
+            <h4 className="text-2xl font-extrabold mb-2">
+              Community Involvement
+            </h4>
+            <p className="leading-loose my-4">
+              Royalty Carpet & Tile Cleaning supports our community in a few
+              different ways that are near and dear to our hearts. We always
+              offer our military members and nonprofits 20% off as a thank you
+              for their service. Every year we also participate in the Shubee
+              fundraiser for Breast Cancer, which allows us and our customers to
+              get involved.
+            </p>
+            <div className="md:flex md:justify-center">
+              <OptimizedImage
+                fileName="fundraiser.png"
+                altText="Royalty Carpet and Tile Work Truck"
+                classes="rounded-md md:w-1/2"
+              />
+              <OptimizedImage
+                fileName="rink.png"
+                altText="Royalty Carpet and Tile Work Truck"
+                classes="rounded-md md:w-1/2"
+              />
+            </div>
+            <p className="leading-loose my-4">
+              Kelly has been involved in non-profit work for over 15 years and
+              serves on the board of{' '}
+              <a
+                href="https://rockincityrollergirls.org/"
+                className="text-blue-600"
+              >
+                Rockin’ City Roller Derby
+              </a>{' '}
+              team in Round Rock, TX. There are many community sponsored events
+              in which we are involved in conjunction with Rockin’ City Roller
+              Derby. To name just a few, Royalty Carpet & Tile Cleaning has been
+              involved in a Food Drive for the Round Rock Serving Area, a skate
+              a thon for the junior roller derby team, and donations for
+              cleaning services as raffle prizes to donate to the Rock Sports
+              Arena.
+            </p>
+          </div>
         </section>
       </div>
     </DefaultLayout>

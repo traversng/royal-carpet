@@ -40,9 +40,9 @@ export default function Home() {
       />
       <div className="w-full rounded-sm md:flex md:justify-center">
         <OptimizedImage
-          altText="baby on clean carpet"
-          fileName="baby-floor.jpg"
-          classes="md:max-w-screen-xl"
+          altText="Puppy on tile"
+          fileName="hero.jpeg"
+          classes=""
         />
       </div>
 

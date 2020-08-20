@@ -4,7 +4,7 @@ const Social = () => {
   return (
     <Default>
       <div className="flex flex-col justify-center align-middle container mx-auto">
-        <h3 className="text-center text-3xl font-extrabold  mt-4 mb-2">Faqs</h3>
+        <h3 className="text-center text-3xl font-extrabold  mt-4 mb-2">FAQS</h3>
         <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
         <div className="px-2">
           <div className="md:flex">
