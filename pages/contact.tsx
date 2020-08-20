@@ -14,8 +14,8 @@ export default function () {
       <div className="container mx-auto md:flex md:flex-col md:items-center md:justify-center">
         <div className="w-full">
           <OptimizedImage
-            altText="baby on clean carpet"
-            fileName="baby-floor.jpg"
+            altText="Owners Craig and Kelly"
+            fileName="owners.jpg"
             classes="w-full rounded-sm"
           />
         </div>

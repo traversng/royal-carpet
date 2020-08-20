@@ -1,5 +1,6 @@
 import DefaultLayout from '../components/layouts/Default'
 import SEO from '../components/SEO'
+import { CTAs } from '../components/CTAs'
 import OptimizedImage from '../components/OptimizedImage'
 
 export default function () {
@@ -64,9 +65,10 @@ export default function () {
             />
           </div>
         </section>
+        <CTAs />
         <section className="mx-auto my-4 px-4 md:py-6">
           <div>
-            <h3 className="text-3xl font-extrabold  mb-2">The Full Story</h3>
+            <h3 className="text-3xl font-extrabold mb-2">The Full Story</h3>
             <hr className="border-t-4 border-brand-medium w-1/12 mb-4" />
           </div>
           <div>

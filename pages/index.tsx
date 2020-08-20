@@ -6,6 +6,7 @@ import SEO from '../components/SEO'
 import config from '../utils/config'
 import OptimizedImage from '../components/OptimizedImage'
 import OptimizedCarousel from '../components/OptimizedCarousel'
+import { CTAs } from '../components/CTAs'
 import { reviews } from '../data/reviews'
 
 const carouselImages = [
@@ -45,6 +46,7 @@ export default function Home() {
           classes=""
         />
       </div>
+      <CTAs />
 
       <div className="container mx-auto">
         <div className="px-2">

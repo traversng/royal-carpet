@@ -6,15 +6,15 @@ export const validateForm = (values) => {
   }
 
   if (!values.message || values.message.length < 5) {
-    errors.message = 'Talk to me, you should have more to say'
+    errors.message = 'Tell us a little more about how we can help you'
   }
 
   if(!values.email) {
     errors.email = 'Email address is required'
   }
 
-  if(!values.company || values.company.length < 2) {
-    errors.company = 'Company name must be at least 2 characters'
+  if(!values.company || values.company.length < 1) {
+    errors.company = 'Company name invalid'
   }
 
   if (!/\S+@\S+\.\S+/.test(values.email)) {

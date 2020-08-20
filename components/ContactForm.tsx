@@ -1,8 +1,11 @@
+import { useState, useEffect } from 'react'
 import fetch from 'isomorphic-unfetch'
 import useForm from '../hooks/useForm'
 import { validateForm } from '../utils/validateForm'
 
 export default function () {
+  const [sent, setSent] = useState(false)
+
   const submit = async () => {
     const response = await fetch('api/airtable', {
       method: 'POST',
@@ -14,6 +17,7 @@ export default function () {
     const data = await response.json()
     if (data) {
       setIsSubmitting(false)
+      setSent(true)
     }
   }
 
@@ -32,6 +36,34 @@ export default function () {
     isSubmitting: boolean
     setIsSubmitting: any
   } = useForm(submit, validateForm)
+
+  useEffect(() => {
+    if(isSubmitting) {
+      setSent(false)
+    }
+  }, [isSubmitting])
+
+  const renderSubmitButton = () => {
+    if (!isSubmitting && !sent) {
+      return 'send'
+    }
+
+    if (!isSubmitting && sent) {
+      return 'sent'
+    }
+
+    if (isSubmitting) {
+      return '...sending'
+    }
+  }
+
+  const renderSending = () => {
+    return '...sending'
+  }
+
+  const renderSent = () => {
+    return 'sent'
+  }
 
   return (
     <div>
@@ -53,7 +85,7 @@ export default function () {
               }`}
               id="grid-full-name"
               type="text"
-              placeholder="Jon"
+              placeholder="First Last"
               autoComplete="name"
               name="name"
               value={values.name || ''}
@@ -76,7 +108,7 @@ export default function () {
               id="grid-email"
               type="email"
               name="email"
-              placeholder="jon@nightswatch.com"
+              placeholder="you@email.com"
               value={values.email || ''}
               onChange={handleChange}
             />
@@ -92,13 +124,13 @@ export default function () {
           </label>
           <input
             className={`text-black bg-gray-300 appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 focus-gray-500 ${
-              errors.email ? 'border-l-4 border-red-700' : ''
+              errors.company ? 'border-l-4 border-red-700' : ''
             }`}
             id="company"
             type="text"
             name="company"
-            placeholder="The Nights Watch Co."
-            value={values.company || ''}
+            placeholder="Acme Co."
+            value={values.company || 'n/a'}
             onChange={handleChange}
           />
           {errors.email && <p className="text-red-700">{errors.email}</p>}
@@ -114,7 +146,7 @@ export default function () {
             <p className="text-gray-600 text-xs italic">How can we help you?</p>
             <textarea
               className={`text-black bg-gray-300 appearance-none block w-full rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 focus-gray-500 ${
-                errors.email ? 'border-l-4 border-red-700' : ''
+                errors.message ? 'border-l-4 border-red-700' : ''
               }`}
               id="grid-message"
               name="message"
@@ -129,7 +161,7 @@ export default function () {
               type="submit"
               className="btn"
             >
-              {isSubmitting ? '...Sending' : 'Send'}
+              { renderSubmitButton() }
             </button>
           </div>
         </div>

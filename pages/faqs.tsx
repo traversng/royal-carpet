@@ -1,4 +1,5 @@
 import Default from '../components/layouts/Default'
+import { CTAs } from '../components/CTAs'
 
 const Social = () => {
   return (
@@ -33,6 +34,7 @@ const Social = () => {
               </ul>
             </div>
           </div>
+          <CTAs />
           <div className="md:flex">
             <div className="py-4 px-2 md:w-1/3">
               <h3>

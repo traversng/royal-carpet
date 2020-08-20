@@ -5,6 +5,7 @@ import Rating from 'react-rating'
 import DefaultLayout from '../components/layouts/Default'
 import SEO from '../components/SEO'
 import { reviews } from '../data/reviews'
+import { CTAs } from '../components/CTAs'
 
 export default function () {
   return (
@@ -23,13 +24,17 @@ export default function () {
         </div>
         <div className="grid gap-2 px-4 md:gap-6 md:grid-cols-3">
           <div className="my-6">
-            <h3 className="text-2xl mb-4 font-bold md:my-4 text-center">Carpet Cleaning</h3>
+            <h3 className="text-2xl mb-4 font-bold md:my-4 text-center">
+              Carpet Cleaning
+            </h3>
             <ReactCompareImage
               leftImage={require(`../assets/images/room-before.png`)}
               rightImage={require(`../assets/images/room-after.png`)}
             />
             <div className="px-2">
-              <h3 className="text-xl font-bold mt-2 text-center">Carpet Care Tips</h3>
+              <h3 className="text-xl font-bold mt-2 text-center">
+                Carpet Care Tips
+              </h3>
               <ul className="list-disc ml-6">
                 <li>Take your shoes off</li>
                 <li>Put an entry mat at all entrances</li>
@@ -49,15 +54,20 @@ export default function () {
               </ul>
             </div>
           </div>
+          <CTAs />
           <div className="my-6">
-            <h3 className="text-2xl my-4 font-bold text-center">Tile Cleaning</h3>
+            <h3 className="text-2xl my-4 font-bold text-center">
+              Tile Cleaning
+            </h3>
             <ReactCompareImage
               leftImage={require(`../assets/images/tile-before.png`)}
               rightImage={require(`../assets/images/tile-after.png`)}
               rightImageCss={{ height: '100%' }}
             />
             <div className="px-2">
-              <h3 className="text-xl font-bold mt-2 text-center">Tile & Grout Care Tips</h3>
+              <h3 className="text-xl font-bold mt-2 text-center">
+                Tile & Grout Care Tips
+              </h3>
               <ul className="list-disc ml-6">
                 <li>Vacuum your tile so dirt does not settle in the grout</li>
                 <li>
@@ -85,14 +95,18 @@ export default function () {
             </div>
           </div>
           <div className="my-6">
-            <h3 className="text-2xl my-4 font-bold text-center">Upholstery Cleaning</h3>
+            <h3 className="text-2xl my-4 font-bold text-center">
+              Upholstery Cleaning
+            </h3>
             <ReactCompareImage
               leftImage={require(`../assets/images/upholstery-dirty.png`)}
               rightImage={require(`../assets/images/upholstery-clean.png`)}
               rightImageCss={{ height: '100%' }}
             />
             <div className="px-2">
-              <h3 className="text-xl font-bold mt-2 text-center">Upholstery Care Tips</h3>
+              <h3 className="text-xl font-bold mt-2 text-center">
+                Upholstery Care Tips
+              </h3>
               <ul className="list-disc ml-6">
                 <li>
                   Vacuum as much as possible for your schedule, especially if

@@ -8,21 +8,19 @@ export default function () {
     <footer className="p-4 bg-gray-200 md:flex md:flex-col md:items-center md:justify-center md:px-6">
       <div className="w-full flex-col items-center justify-center md:flex md:flex-row">
         <div className="my-4 flex justify-between md:justify-center">
-          <div className="px-2 md:flex md:items-center">
+          <div className="flex items-center md:w-1/2">
             <a
               href="https://www.facebook.com/RoyaltyCarpet/"
               className="cursor-pointer hover:text-blue-500 px-2"
             >
-              <FaFacebook className="text-3xl hover:text-blue-300" />
+              <FaFacebook className="text-3xl md:text-6xl hover:text-blue-300" />
             </a>
             <a
               href="https://www.yelp.com/biz/royalty-carpet-and-tile-cleaning-round-rock"
               className="cursor-pointer hover:text-blue-500 px-2"
             >
-              <FaYelp className="text-3xl hover:text-blue-300" />
+              <FaYelp className="text-3xl md:text-6xl hover:text-blue-300" />
             </a>
-          </div>
-          <div className="grid grid-cols-2 justify-between items-center px-2 md:flex-row md:w-3/4 lg:grid-cols-5">
             <a
               href="https://www.housecallpro.com/superpro/"
               className="cursor-pointer hover:text-blue-500 px-2 w-full"
@@ -38,12 +36,6 @@ export default function () {
               className="cursor-pointer hover:text-blue-500 px-2 w-full"
             >
               <BBB />
-            </a>
-            <a href="https://housecallpro.com/book/Royalty-Carpet--Tile-Cleaning/331682fdd7e241ecb6a8ac97c3680572">
-              <button className="btn w-full">Book Online Now</button>
-            </a>
-            <a href="https://giftup.app/place-order/c1164efb-f774-493d-8bcf-6da1b39ae972?platform=Squarespace">
-              <button className="btn w-full">Gift Certificates</button>
             </a>
             <a
               href="https://rockincityrollergirls.org/"
