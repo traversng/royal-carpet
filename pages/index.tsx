@@ -34,7 +34,7 @@ export default function Home() {
     <Default>
       <SEO
         title="Royalty Carpet & Tile"
-        description="Royalty Carpet & Tile Serving all of Austin"
+        description="Royalty Carpet & Tile Cleaning all of Austin"
         image={config.images.default}
         url={config.liveUrl}
       />

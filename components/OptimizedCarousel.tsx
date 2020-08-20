@@ -18,7 +18,7 @@ export const OptimizedCarousel = ({ content }) => {
     <Slider {...settings}>
       {content.map((review, i) => {
         return (
-          <div className="p-4 leading-relaxed bg-gray-200">
+          <div className="p-4 leading-relaxed bg-gray-200" key={review.title}>
             {review.title && <h3>{review.title}</h3>}
             <p className="italic">{review.quote}</p>
             <h4 className="font-bold">- {review.reviewer}</h4>
