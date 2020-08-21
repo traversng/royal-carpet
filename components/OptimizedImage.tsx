@@ -7,12 +7,14 @@ export default ({
   classes: string;
   fileName: string;
 }) => {
+  const oneSize = require(`../assets/images/${fileName}?resize&size=300`);
+  const multipleSizes = require(`../assets/images/${fileName}?resize&sizes[]=300&sizes[]=600&sizes[]=1000`)
   return (
     <img
       className={`lazyload ${classes}`}
       alt={altText}
-      src={require(`../assets/images/${fileName}?lqip`)}
-      srcSet={`${require(`../assets/images/${fileName}`)} 1x, ${require(`../assets/images/${fileName}`)} 2x`}
+      src={oneSize.src}
+      srcSet={multipleSizes.srcSet}
     />
   )
 }

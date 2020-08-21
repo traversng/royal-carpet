@@ -20,6 +20,7 @@
     "react-rating": "^2.0.5",
     "react-responsive-carousel": "^3.2.9",
     "react-slick": "^0.27.0",
+    "sharp": "^0.25.4",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^1.4.6"
   },
@@ -41,7 +42,7 @@
     "reading-time": "^1.2.0",
     "rehype": "^11.0.0",
     "remark-code-titles": "^0.1.1",
-    "responsive-loader": "^1.2.0",
+    "responsive-loader": "^2.0.2",
     "typescript": "^3.9.6",
     "webp-loader": "^0.6.0"
   }

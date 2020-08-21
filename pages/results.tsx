@@ -22,6 +22,7 @@ export default function () {
           </h3>
           <hr className="border-t-4 self-center border-brand-medium w-1/12" />
         </div>
+        <CTAs />
         <div className="grid gap-2 px-4 md:gap-6 md:grid-cols-3">
           <div className="my-6">
             <h3 className="text-2xl mb-4 font-bold md:my-4 text-center">
@@ -54,7 +55,6 @@ export default function () {
               </ul>
             </div>
           </div>
-          <CTAs />
           <div className="my-6">
             <h3 className="text-2xl my-4 font-bold text-center">
               Tile Cleaning
@@ -144,9 +144,9 @@ export default function () {
           <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
           <div className="grid grid-cols-1 grid-gap-2 md:grid-cols-3">
             {reviews &&
-              reviews.map((review) => {
+              reviews.map((review, i) => {
                 return (
-                  <div className="p-4 leading-relaxed">
+                  <div className="p-4 leading-relaxed" key={review.reviewer}>
                     {review.title && <h3 className="">{review.title}</h3>}
                     <p className="text-gray-600 italic">{review.quote}</p>
                     <h4 className="font-bold ">- {review.reviewer}</h4>

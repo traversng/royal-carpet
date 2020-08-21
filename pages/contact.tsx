@@ -11,15 +11,15 @@ export default function () {
         description="Travis Ueki - Contact"
         url="contact"
       />
-      <div className="container mx-auto md:flex md:flex-col md:items-center md:justify-center">
-        <div className="w-full">
+      <div className="container mx-auto md:flex md:items-center md:justify-between md:p-6">
+        <div className="w-full md:w-2/5">
           <OptimizedImage
             altText="Owners Craig and Kelly"
             fileName="owners.jpg"
             classes="w-full rounded-sm"
           />
         </div>
-        <div className="px-4">
+        <div className="p-4 md:w-1/2">
           <ContactForm />
         </div>
       </div>
