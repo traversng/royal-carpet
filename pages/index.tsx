@@ -154,10 +154,13 @@ export default function Home() {
                 </div>
                 <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />
                 <p className="font-medium text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-                  dolores deserunt! Asperiores earum quidem dolore mollitia nam
-                  magni culpa modi, eligendi eaque exercitationem sunt ullam
-                  incidunt reiciendis! Temporibus, natus. Veritatis.
+                  We all love curling up on the couch, but spills, pet smells,
+                  sweat and dirt can make the experience less relaxing. Let us
+                  help keep your home healthy and happy, which includes the
+                  cleaning and maintenance of your couches and chairs. We offer
+                  a low moisture cleaning process using our truck mounted system
+                  based on the type of fabric that cleans, sanitizes, and
+                  deodorizes.
                 </p>
               </div>
             </div>

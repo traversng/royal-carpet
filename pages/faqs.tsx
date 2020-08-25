@@ -1,9 +1,15 @@
 import Default from '../components/layouts/Default'
 import { CTAs } from '../components/CTAs'
+import SEO from '../components/SEO'
 
 const Social = () => {
   return (
     <Default>
+      <SEO
+        title="Royalty Carpet & Tile - Contact"
+        description="Royalty Carpet & Tile - Contact"
+        url="contact"
+      />
       <div className="flex flex-col justify-center align-middle container mx-auto">
         <h3 className="text-center text-3xl font-extrabold  mt-4 mb-2">FAQS</h3>
         <hr className="border-t-4 self-center border-brand-medium w-1/12 mb-2 md:mb-4" />

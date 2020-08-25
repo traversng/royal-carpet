@@ -130,7 +130,7 @@ export default function () {
             type="text"
             name="company"
             placeholder="Acme Co."
-            value={values.company || 'n/a'}
+            value={values.company}
             onChange={handleChange}
           />
           {errors.email && <p className="text-red-700">{errors.email}</p>}

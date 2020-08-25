@@ -13,10 +13,6 @@ export const validateForm = (values) => {
     errors.email = 'Email address is required'
   }
 
-  if(!values.company || values.company.length < 1) {
-    errors.company = 'Company name invalid'
-  }
-
   if (!/\S+@\S+\.\S+/.test(values.email)) {
     errors.email = 'Invalid email'
   }

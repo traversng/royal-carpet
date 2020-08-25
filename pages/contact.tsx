@@ -7,8 +7,8 @@ export default function () {
   return (
     <DefaultLayout>
       <SEO
-        title="Travis Ueki - Contact"
-        description="Travis Ueki - Contact"
+        title="Royalty Carpet & Tile - Contact"
+        description="Royalty Carpet & Tile - Contact"
         url="contact"
       />
       <div className="container mx-auto md:flex md:items-center md:justify-between md:p-6">

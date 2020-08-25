@@ -7,8 +7,8 @@ export default function () {
   return (
     <DefaultLayout>
       <SEO
-        title="Next Blog Starter - About"
-        description="Next Blog Starter - About"
+        title="Royalty Carpet & Tile - About"
+        description="Royalty Carpet & Tile - About"
         url="about"
       />
       <div className="px-2 container mx-auto md:flex md:flex-col md:justify-center">

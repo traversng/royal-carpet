@@ -11,8 +11,8 @@ export default function () {
   return (
     <DefaultLayout>
       <SEO
-        title="Next Blog Starter - Results"
-        description="Next Blog Starter - Results"
+        title="Royalty Carpet & Tile - Results"
+        description="Royalty Carpet & Tile - Results"
         url="results"
       />
       <div className="container mx-auto">
