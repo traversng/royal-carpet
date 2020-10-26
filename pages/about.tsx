@@ -7,8 +7,9 @@ export default function () {
   return (
     <DefaultLayout>
       <SEO
-        title="Royalty Carpet & Tile - About"
-        description="Royalty Carpet & Tile - About"
+        title="Royalty Carpet & Tile - About Us"
+        description="Royalty Carpet & Tile Cleaning lives and breathes excellence. It
+        has been a part of our mission statement since 1986"
         url="about"
       />
       <div className="px-2 container mx-auto md:flex md:flex-col md:justify-center">
@@ -91,12 +92,12 @@ export default function () {
             <div className="md:flex md:justify-center">
               <OptimizedImage
                 fileName="rose-logo.png"
-                altText="Royalty Carpet and Tile Work Truck"
+                altText="Original Royalty Carpet and Tile Logo from 1986"
                 classes="rounded-md md:w-1/2"
               />
               <OptimizedImage
                 fileName="retro-van.png"
-                altText="Royalty Carpet and Tile Work Truck"
+                altText="Original Royalty Carpet and Tile Work Truck from 1986"
                 classes="rounded-md md:w-1/2"
               />
             </div>
@@ -115,12 +116,12 @@ export default function () {
             <div className="md:flex md:justify-center">
               <OptimizedImage
                 fileName="logo.png"
-                altText="Royalty Carpet and Tile Work Truck"
+                altText="Current Royalty Carpet and Tile Logo"
                 classes="rounded-md md:w-1/2"
               />
               <OptimizedImage
                 fileName="dad.png"
-                altText="Royalty Carpet and Tile Work Truck"
+                altText="Bob Winchell next to work truck in the 1900s"
                 classes="rounded-md md:w-1/2"
               />
             </div>
@@ -183,7 +184,7 @@ export default function () {
             <div className="md:flex md:justify-center">
               <OptimizedImage
                 fileName="fire-station.png"
-                altText="Royalty Carpet and Tile Work Truck"
+                altText="Company Work Truck in front of Round Rock Central Fire Station after cleaning"
                 classes="rounded-md"
               />
             </div>
@@ -203,7 +204,7 @@ export default function () {
             <div className="md:flex md:justify-center">
               <OptimizedImage
                 fileName="door.png"
-                altText="Royalty Carpet and Tile Work Truck"
+                altText="On the job at Round Rock Central Fire Station"
                 classes="rounded-md"
               />
             </div>
@@ -223,12 +224,12 @@ export default function () {
             <div className="md:flex md:justify-center">
               <OptimizedImage
                 fileName="fundraiser.png"
-                altText="Royalty Carpet and Tile Work Truck"
+                altText="Rockin’ City Roller Derby fundraiser"
                 classes="rounded-md md:w-1/2"
               />
               <OptimizedImage
                 fileName="rink.png"
-                altText="Royalty Carpet and Tile Work Truck"
+                altText="Royalty Carpet and Tile proud sponsers of Rockin’ City Roller Derby"
                 classes="rounded-md md:w-1/2"
               />
             </div>

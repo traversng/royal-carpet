@@ -7,7 +7,7 @@ const Social = () => {
     <Default>
       <SEO
         title="Royalty Carpet & Tile - FAQs"
-        description="Royalty Carpet & Tile - FAQs"
+        description="Frequently asked questions. Here are some tips and answers to some common questions"
         url="contact"
       />
       <div className="flex flex-col justify-center align-middle container mx-auto">

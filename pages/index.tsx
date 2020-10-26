@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <Default>
       <SEO
-        title="Royalty Carpet & Tile"
+        title="Royalty Carpet & Tile Cleaning. Serving all of Austin, Round Rock, Pflugerville, Hutto, Cedar Park, Georgetown, Leander and between!"
         description="Royalty Carpet & Tile Cleaning all of Austin, Round Rock, Pflugerville, Hutto, Cedar Park, Georgetown and Leander"
         image={config.images.default}
         url={config.liveUrl}
       />
       <div className="w-full rounded-sm md:w-2/3 md:mx-auto">
         <OptimizedImage
-          altText="Puppy on tile"
+          altText="Puppy on clean tile floor"
           fileName="hero.jpeg"
           classes=""
         />
@@ -78,7 +78,7 @@ export default function Home() {
               <div className="w-full rounded-md max-w-screen-sm h-40 md:h-56 lg:h-64 overflow-hidden">
                 <OptimizedImage
                   fileName="carpet.jpg"
-                  altText="baby-floor"
+                  altText="Clean carpet floor"
                   classes=""
                 />
               </div>
@@ -100,7 +100,7 @@ export default function Home() {
               <div className="w-full rounded-md max-w-screen-sm h-40 md:h-56 lg:h-64 overflow-hidden">
                 <OptimizedImage
                   fileName="tile.jpg"
-                  altText="baby-floor"
+                  altText="Clean white tile"
                   classes=""
                 />
               </div>
@@ -122,7 +122,7 @@ export default function Home() {
               <div className="w-full rounded-md max-w-screen-sm h-40 md:h-56 lg:h-64 overflow-hidden">
                 <OptimizedImage
                   fileName="couch.jpg"
-                  altText="baby-floor"
+                  altText="Clean couch with decor"
                   classes=""
                 />
               </div>

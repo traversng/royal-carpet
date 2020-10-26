@@ -11,8 +11,8 @@ export default function () {
   return (
     <DefaultLayout>
       <SEO
-        title="Royalty Carpet & Tile - Results"
-        description="Royalty Carpet & Tile - Results"
+        title="Royalty Carpet & Tile - Get Results Today!"
+        description="Family owned and operated for over 32 years. Great service, great results. Round Rock, Pflugerville, Hutto, Cedar Park, Georgetown, Leander."
         url="results"
       />
       <div className="container mx-auto">
@@ -31,6 +31,8 @@ export default function () {
             <ReactCompareImage
               leftImage={require(`../assets/images/room-before.png`)}
               rightImage={require(`../assets/images/room-after.png`)}
+              leftImageAlt='Dirty carpet in Round Rock Before'
+              rightImageAlt='Clean carpet in Round Rock After'
             />
             <div className="px-2">
               <h3 className="text-xl font-bold mt-2 text-center">
@@ -63,6 +65,8 @@ export default function () {
               leftImage={require(`../assets/images/tile-before.png`)}
               rightImage={require(`../assets/images/tile-after.png`)}
               rightImageCss={{ height: '100%' }}
+              leftImageAlt='Dirty tile floor in Austin before'
+              rightImageAlt='Clean tile floor in Austin after'
             />
             <div className="px-2">
               <h3 className="text-xl font-bold mt-2 text-center">
@@ -102,6 +106,8 @@ export default function () {
               leftImage={require(`../assets/images/upholstery-dirty.png`)}
               rightImage={require(`../assets/images/upholstery-clean.png`)}
               rightImageCss={{ height: '100%' }}
+              leftImageAlt='Dirty upholstery Pflugerville before'
+              rightImageAlt='Clean upholstery Pflugerville after'
             />
             <div className="px-2">
               <h3 className="text-xl font-bold mt-2 text-center">

@@ -7,14 +7,14 @@ export default function () {
   return (
     <DefaultLayout>
       <SEO
-        title="Royalty Carpet & Tile - Contact"
-        description="Royalty Carpet & Tile - Contact"
+        title="Royalty Carpet & Tile - Contact Us Today"
+        description="Contact us today for a free quote! Highly reviewed and in business for over 32 years. Round Rock, Pflugerville, Hutto, Cedar Park, Georgetown, Leander and between."
         url="contact"
       />
       <div className="container mx-auto md:flex md:items-center md:justify-between md:p-6">
         <div className="w-full md:w-2/5">
           <OptimizedImage
-            altText="Owners Craig and Kelly"
+            altText="Royalty Carpet and Tile Owners Craig and Kelly"
             fileName="owners.jpg"
             classes="w-full rounded-sm"
           />
