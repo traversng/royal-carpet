@@ -9,37 +9,16 @@ import OptimizedCarousel from '../components/OptimizedCarousel'
 import { CTAs } from '../components/CTAs'
 import { reviews } from '../data/reviews'
 
-const carouselImages = [
-  {
-    fileName: 'baby-floor.jpg',
-    altText: 'baby-floor',
-    title: 'Carpet cleaning',
-    description: 'Baby on clean carpet after a cleaning service',
-  },
-  {
-    fileName: 'baby-floor.jpg',
-    altText: 'baby-floor',
-    title: 'Tile cleaning',
-    description: 'Baby on clean carpet after a cleaning service',
-  },
-  {
-    fileName: 'baby-floor.jpg',
-    altText: 'baby-floor',
-    title: 'Upholstery cleaning',
-    description: 'Baby on clean carpet after a cleaning service',
-  },
-]
-
 export default function Home() {
   return (
     <Default>
       <SEO
         title="Royalty Carpet & Tile"
-        description="Royalty Carpet & Tile Cleaning all of Austin"
+        description="Royalty Carpet & Tile Cleaning all of Austin, Round Rock, Pflugerville, Hutto, Cedar Park, Georgetown and Leander"
         image={config.images.default}
         url={config.liveUrl}
       />
-      <div className="w-full rounded-sm md:flex md:justify-center">
+      <div className="w-full rounded-sm md:w-2/3 md:mx-auto">
         <OptimizedImage
           altText="Puppy on tile"
           fileName="hero.jpeg"
