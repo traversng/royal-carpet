@@ -2,6 +2,7 @@ import { FaFacebook, FaInstagram, FaYelp } from 'react-icons/fa'
 
 import OptimizedImage from '../components/OptimizedImage'
 import BBB from '../components/svgs/BBB'
+import { GoogleMapImage } from '../components/GoogleMap'
 
 export default function () {
   return (
@@ -49,6 +50,13 @@ export default function () {
             </a>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <address>
+          2007 Montclair Dr <br />
+          Round Rock, TX 78664
+        </address>
+        {/* <GoogleMapImage /> */}
       </div>
     </footer>
   )

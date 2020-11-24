@@ -2,6 +2,7 @@ import DefaultLayout from '../components/layouts/Default'
 import SEO from '../components/SEO'
 import ContactForm from '../components/ContactForm'
 import OptimizedImage from '../components/OptimizedImage'
+import { GoogleMapImage } from '../components/GoogleMap'
 
 export default function () {
   return (
@@ -22,6 +23,9 @@ export default function () {
         <div className="p-4 md:w-1/2">
           <ContactForm />
         </div>
+      </div>
+      <div className="flex justify-center">
+        <GoogleMapImage />
       </div>
     </DefaultLayout>
   )
