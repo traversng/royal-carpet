@@ -4,59 +4,45 @@ import Navbar from '../Navbar'
 import Footer from '../Footer'
 
 class Default extends React.Component {
-  componentDidMount() {
-    // Include the Crisp code here, without the <script></script> tags
-    // window['$crisp'] = []
-    // window['CRISP_WEBSITE_ID'] =
-    //   process.env.CRISP_ID || '2bba5423-0238-4656-a21a-b1b22117986a'
-
-    // ;(function () {
-    //   var d = document
-    //   var s: any = d.createElement('script')
-
-    //   s.src = 'https://client.crisp.chat/l.js'
-    //   s.async = 1
-    //   d.getElementsByTagName('head')[0].appendChild(s)
-    // })()
-
-    window['_chatlio'] = window['_chatlio'] || []
-    !(function () {
-      var t = document.getElementById('chatlio-widget-embed')
-      if (t && window['ChatlioReact'] && window['_chatlio'].init)
-        return void window['_chatlio'].init(t, window['ChatlioReact'])
-      for (
-        var e = function (t) {
-            return function () {
-              window['_chatlio'].push([t].concat(arguments))
-            }
-          },
-          i = [
-            'configure',
-            'identify',
-            'track',
-            'show',
-            'hide',
-            'isShown',
-            'isOnline',
-            'page',
-            'open',
-            'showOrHide',
-          ],
-          a = 0;
-        a < i.length;
-        a++
-      )
-        window['_chatlio'][i[a]] || (window['_chatlio'][i[a]] = e(i[a]))
-      var n = document.createElement('script'),
-        c = document.getElementsByTagName('script')[0]
-      ;(n.id = 'chatlio-widget-embed'),
-        (n.src = 'https://w.chatlio.com/w.chatlio-widget.js'),
-        (n.async = !0),
-        n.setAttribute('data-embed-version', '2.3')
-      n.setAttribute('data-widget-id', 'd1fa7951-0e26-4cdb-4891-6cf888e81296')
-      c.parentNode.insertBefore(n, c)
-    })()
-  }
+  // componentDidMount() {
+  //   window['_chatlio'] = window['_chatlio'] || []
+  //   !(function () {
+  //     var t = document.getElementById('chatlio-widget-embed')
+  //     if (t && window['ChatlioReact'] && window['_chatlio'].init)
+  //       return void window['_chatlio'].init(t, window['ChatlioReact'])
+  //     for (
+  //       var e = function (t) {
+  //           return function () {
+  //             window['_chatlio'].push([t].concat(arguments))
+  //           }
+  //         },
+  //         i = [
+  //           'configure',
+  //           'identify',
+  //           'track',
+  //           'show',
+  //           'hide',
+  //           'isShown',
+  //           'isOnline',
+  //           'page',
+  //           'open',
+  //           'showOrHide',
+  //         ],
+  //         a = 0;
+  //       a < i.length;
+  //       a++
+  //     )
+  //       window['_chatlio'][i[a]] || (window['_chatlio'][i[a]] = e(i[a]))
+  //     var n = document.createElement('script'),
+  //       c = document.getElementsByTagName('script')[0]
+  //     ;(n.id = 'chatlio-widget-embed'),
+  //       (n.src = 'https://w.chatlio.com/w.chatlio-widget.js'),
+  //       (n.async = !0),
+  //       n.setAttribute('data-embed-version', '2.3')
+  //     n.setAttribute('data-widget-id', 'd1fa7951-0e26-4cdb-4891-6cf888e81296')
+  //     c.parentNode.insertBefore(n, c)
+  //   })()
+  // }
 
   render() {
     return (
